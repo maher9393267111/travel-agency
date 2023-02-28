@@ -1,18 +1,17 @@
 import React from 'react'
 import { countries } from '../../data/countries';
+import Banner from '../../components/services/Banner'
+import MainComponent from '../../components/services/index'
+import Seo from '../../components/common/seo';
 
 
-export default function CountryService({filterData}) {
+export default function CountryService({filterData ,  filteredService}) {
   return (
-    <div>
-
-{filterData?.items?.length}
-
-
-
-
-
-    </div>
+    <>
+    
+    <Seo pageTitle="Services Page "  />
+    <MainComponent    filteredService={filteredService} />
+  </>
   )
 }
 
@@ -31,12 +30,17 @@ CountryService.getInitialProps = async ({
     
 const filterData = countries.find(country =>
  
-  country?.id === parseInt(countryquery) &&   country.items.filter(item => item.query === service.toString()) )
+  country?.id === parseInt(countryquery)  )
 
-  console.log('filterda' , filterData)
+
+const filtercopuntryitems = filterData?.items?.filter((item) => item?.query === service)
+
+console.log(filtercopuntryitems[0])
+  console.log('filterda'  )
     return {
       
-        filterData
+        filterData,
+        filteredService:filtercopuntryitems[0]
      
     };
 
