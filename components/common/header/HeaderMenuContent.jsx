@@ -153,34 +153,34 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: "تأشيرات السعوديه جميع انواعها",
-          routerPath: "/country/:1",
+          routerPath: "/country/?country=1&service=visa",
         },
         {
           name: "برامج العمره",
-          routerPath: "/country/:1",
+          routerPath: "/country/1",
         },
         {
           name: "برامج الحج",
-          routerPath: "/country/:1",
+          routerPath: "/country/1",
         },
         {
           name: "سياحه الهجرة النبويه",
-          routerPath: "/country/:1",
+          routerPath: "/country/1",
         },
       
         {
           name: "حجز فنادق",
-          routerPath: "/country/:1",
+          routerPath: "/country/1",
         },
 
         {
           name: "حجز مواصلات",
-          routerPath: "/country/:1",
+          routerPath: "/country/1",
         },
 
         {
           name: "تأجير سيارات",
-          routerPath: "/country/:1",
+          routerPath: "/country/1",
         },
 
 
@@ -193,72 +193,72 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: "حجز فنادق",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         {
           name: "حجز شقق مفروشه",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         {
           name: "حجز فيلا وقصور مفروشه",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
 
         {
           name: "حجز اكواخ",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
 
         {
           name: "حجز مزارع",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
 
         {
           name: "حجز كرفانات",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         
         {
           name: "برامج سياحيه",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
         {
           name: "برامج السياحه العلاجيه",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         {
           name: "برامج المعارض والمؤتمرات والدورات التكوينيه",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         {
           name: "برامج شهر العسل",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         {
           name: "تأجير مواصلات",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         {
           name: "تأجير سيارات",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
         
 
         {
           name: "الوساطه التجاريه لتقديم خدمات رجال الاعمال",
-          routerPath: "/country/:2",
+          routerPath: "/country/2",
         },
 
 
@@ -272,7 +272,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: "عروض سياحيه وجولات فقط",
-          routerPath: `/country/:3`,
+          routerPath: `/country/3`,
         },
         // {
         //   name: "Slider Style",
@@ -287,28 +287,28 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: " تأشيرة السياحيه",
-          routerPath: "/country/:4",
+          routerPath: "/country/4",
         },
         {
           name: " حجوزات الفنادق",
-          routerPath: "/country/:4",
+          routerPath: "/country/4",
         },
         {
           name: "حجز مواصلات واستقبال",
-          routerPath: "/country/:4",
+          routerPath: "/country/4",
         },
         {
           name: "برامج سياحيه عائليه",
-          routerPath: "/country/:4",
+          routerPath: "/country/4",
         },
 
         {
           name: "برامج المعارض والمؤتمرات والدورات التكوينيه",
-          routerPath: "/country/:4",
+          routerPath: "/country/4",
         },
         {
           name: "الوساطه وخدمات رجال الاعمال وفتح شركات",
-          routerPath: "/country/:4",
+          routerPath: "/country/4",
         },
 
 
@@ -321,20 +321,20 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: "تأشيرات سياحيه",
-          routerPath: "/country/:5",
+          routerPath: "/country/5",
         },
         {
           name: "برنامج عبق التاريخ السياحي",
-          routerPath: "/country/:5",
+          routerPath: "/country/5",
         },
         {
           name: "برامج سياحيه",
-          routerPath: "/country/:5",
+          routerPath: "/country/5",
         },
 
         {
           name: "برنامج الاستجمام والاسباء",
-          routerPath: "/country/:5",
+          routerPath: "/country/5",
         },
       ],
     },
@@ -344,11 +344,11 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: " تأشيره قيرغيستان",
-          routerPath: "/country/:6",
+          routerPath: "/country/6",
         },
         {
           name: " برنامج استكشف 4x4",
-          routerPath: "/country/:6",
+          routerPath: "/country/6",
         },
     
       ],
@@ -468,7 +468,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Home</span>
+          <span className="title">الرئيسية</span>
           <span className="arrow"></span>
         </a>
         {/* <!-- Level Two--> */}
@@ -504,7 +504,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Listing</span>
+          <span className="title">الخدمات والدول</span>
           <span className="arrow"></span>
         </a>
         {/* <!-- Level Two--> */}
