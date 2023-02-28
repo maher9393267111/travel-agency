@@ -21222,3 +21222,9 @@ button.gm-ui-hover-effect:focus {
     display: none;
   }
 }
+
+
+.img-style{
+  width: 377px !important;
+  height: 350px !important;
+}

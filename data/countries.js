@@ -3,7 +3,7 @@ export const countries =[
     {
 id:1,
 title:'السعودية',
-image:'https://images.unsplash.com/photo-1652807517216-6a8aed433f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1295&q=80',
+image:'/assets/images/service-imgs/saudisec.jpg',
 
 items:[
 
@@ -93,7 +93,7 @@ items:[
 {
     id:2,
     title:'تركيا"',
-    image:'https://images.unsplash.com/photo-1652807517216-6a8aed433f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1295&q=80',
+    image: '/assets/images/service-imgs/turkeysec.png',
     
     items:[
     
@@ -253,7 +253,7 @@ items:[
 {
     id:3,
     title: "أذربيجان",
-    image:'https://images.unsplash.com/photo-1652807517216-6a8aed433f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1295&q=80',
+    image:'https://yetimvakfi.org.tr/rsm/icerik/buyuk/azerbaycan_7251jpeg',
     
     items:[
     
@@ -279,7 +279,7 @@ items:[
         id:4,
         title: "الإمارات",
         
-        image:'https://images.unsplash.com/photo-1652807517216-6a8aed433f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1295&q=80',
+        image:'https://e7.pngegg.com/pngimages/297/477/png-clipart-flag-of-the-united-arab-emirates-qadri-international-educational-consultancy-emirates-net-systems-llc-flags-of-the-world-flag-miscellaneous-flag-thumbnail.png',
         
         items:[
         

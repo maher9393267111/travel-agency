@@ -52,14 +52,14 @@ const Home3 = () => {
       <section id="property-city" className="property-city pt0 pb30">
         <div className="row">
           <div className="col-lg-12">
-            <div className="main-title">
-              <h2>Find Properties in These Cities</h2>
-              <p>
+            <div className="main-title   ml-12 font-serif  font-semibold  text-2xl">
+              <h2>بعض البلدان التي نقدم فيها خدماتنا</h2>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
                 <a className="float-end" href="#">
                   View All <span className="flaticon-next"></span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
