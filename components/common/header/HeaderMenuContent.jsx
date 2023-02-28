@@ -338,7 +338,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <a
           href="#"
           className={
@@ -373,7 +373,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               >
                 {item.title}
               </a>
-              {/* <!-- Level Three--> */}
+           
               <ul className="sub-menu ">
                 {item.items.map((val, i) => (
                   <li key={i}>
@@ -395,10 +395,10 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
       {/* End .dropitem */}
 
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <a
           href="#"
           className={
@@ -425,7 +425,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
       {/* End .dropitem */}
 
       <li className="dropitem">

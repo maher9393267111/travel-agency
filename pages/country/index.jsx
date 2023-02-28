@@ -35,7 +35,7 @@ const filterData = countries.find(country =>
 
 const filtercopuntryitems = filterData?.items?.filter((item) => item?.query === service)
 
-console.log(filtercopuntryitems[0]?.maninImage)
+console.log(filtercopuntryitems[0]?.mainImage)
   console.log('filterda'  )
     return {
       
