@@ -10,7 +10,7 @@ items:[
     {
         name: "تأشيرات السعوديه جميع انواعها",
         routerPath: "/country/?country=1&service=visa",
-        maninImage:"",
+        mainImage:"",
         images:[],
         query:'visa',
         desc:'',
@@ -20,6 +20,7 @@ items:[
       {
         name: "برامج العمره",
         routerPath: "/country/?country=1&service=omraProgramm",
+        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
         images:[],
         query:'omraProgramm',
         desc:'',

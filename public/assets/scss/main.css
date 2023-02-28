@@ -9994,11 +9994,13 @@ form.home5_advanced_search_form
 
 /*== Inner Pages Breadcrumb ==*/
 .inner_page_breadcrumb {
-  background-image: url(../images/background/inner-pagebg.jpg);
+  /* background-image: url(../images/background/inner-pagebg.jpg); */
   background-repeat: no-repeat;
   height: 370px;
   margin-top: 88px;
   position: relative;
+  background-position: center;
+  background: white;
 }
 @media (max-width: 576px) {
   .inner_page_breadcrumb {
