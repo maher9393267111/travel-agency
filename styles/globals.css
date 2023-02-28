@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.py-2\.5 {
+  padding-top: 0.825rem !important ;
+  padding-bottom: 0.825rem !important;
+}
+
+input:focus {
+  outline: none !important;
+  border: "#ebebeb";
+}
+
+.numOfGuest {
+  position: relative;
+  width: 80%;
+}
