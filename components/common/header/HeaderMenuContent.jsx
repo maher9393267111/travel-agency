@@ -157,30 +157,30 @@ const HeaderMenuContent = ({ float = "" }) => {
         },
         {
           name: "برامج العمره",
-          routerPath: "/country/1",
+          routerPath: "/country/?country=1&service=omraProgramm",
         },
         {
           name: "برامج الحج",
-          routerPath: "/country/1",
+          routerPath: "/country/?country=1&service=hajProgramm",
         },
         {
           name: "سياحه الهجرة النبويه",
-          routerPath: "/country/1",
+          routerPath: "/country/?country=1&service=nabawiTurism",
         },
       
         {
           name: "حجز فنادق",
-          routerPath: "/country/1",
+          routerPath: "/country/?country=1&service=hotelsFind",
         },
 
         {
           name: "حجز مواصلات",
-          routerPath: "/country/1",
+          routerPath: "/country/?country=1&service=carsReservation",
         },
 
         {
           name: "تأجير سيارات",
-          routerPath: "/country/1",
+          routerPath: "/country/?country=1&service=carsRental",
         },
 
 
@@ -193,72 +193,72 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: "حجز فنادق",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=hotelsReservation",
         },
 
         {
           name: "حجز شقق مفروشه",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=homesReservation",
         },
 
         {
           name: "حجز فيلا وقصور مفروشه",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=villasReservation",
         },
 
 
         {
           name: "حجز اكواخ",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=smallRoomsReservation",
         },
 
 
         {
           name: "حجز مزارع",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=farmsReservation",
         },
 
 
         {
           name: "حجز كرفانات",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=caravanReservation",
         },
 
         
         {
           name: "برامج سياحيه",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=tourismProgramms",
         },
         {
           name: "برامج السياحه العلاجيه",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=healthProgramms",
         },
 
         {
           name: "برامج المعارض والمؤتمرات والدورات التكوينيه",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=referencesProgramms",
         },
 
         {
           name: "برامج شهر العسل",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=weddingsProgramms",
         },
 
         {
           name: "تأجير مواصلات",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=carsReservation",
         },
 
         {
           name: "تأجير سيارات",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=carsRental",
         },
 
         
 
         {
           name: "الوساطه التجاريه لتقديم خدمات رجال الاعمال",
-          routerPath: "/country/2",
+          routerPath: "/country/?country=2&service=business",
         },
 
 
@@ -272,7 +272,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: "عروض سياحيه وجولات فقط",
-          routerPath: `/country/3`,
+          routerPath: `/country/?country=3&service=tourismTours`,
         },
         // {
         //   name: "Slider Style",
@@ -287,7 +287,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       items: [
         {
           name: " تأشيرة السياحيه",
-          routerPath: "/country/4",
+          routerPath: "/country/?country=4&service=visa",
         },
         {
           name: " حجوزات الفنادق",
