@@ -19,6 +19,7 @@ const Header = () => {
 
   return (
     <header
+    dir=""
       className={`header-nav menu_style_home_one style2 home3 navbar-scrolltofixed stricky main-menu  ${
         navbar ? "stricky-fixed " : ""
       }`}
