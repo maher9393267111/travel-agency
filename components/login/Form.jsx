@@ -1,8 +1,35 @@
-import Link from "next/link";
+import Loader from './loader'
+import { StateContext } from '../../context/index'
+import { useRouter } from 'next/router'
+import React, { useContext, useState } from 'react'
+import Link from 'next/link'
+
 
 const Form = () => {
+
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [loading, setLoading] = useState(false)
+  const { signInUser } = useContext(StateContext)
+  const { replace } = useRouter()
+  const onSubmit = async e => {
+      e.preventDefault()
+      setLoading(true)
+      await signInUser(email, password)
+      replace('/admin')
+      setLoading(false)
+  }
+
+
+
   return (
-    <form action="#">
+    <form 
+    onSubmit={e => onSubmit(e)}
+    >
+
+{loading && <Loader />}
+
       <div className="heading text-center">
         <h3>Login to your account</h3>
         <p className="text-center">
@@ -16,10 +43,13 @@ const Form = () => {
 
       <div className="input-group mb-2 mr-sm-2">
         <input
-          type="text"
+              onChange={e => setEmail(e.target.value)}
+              value={email}
+              
+          type="email"
           className="form-control"
           required
-          placeholder="User Name Or Email"
+          placeholder=" Email"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -31,6 +61,10 @@ const Form = () => {
 
       <div className="input-group form-group">
         <input
+ onChange={e => setPassword(e.target.value)}
+ value={password}
+
+
           type="password"
           className="form-control"
           required

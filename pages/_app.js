@@ -4,6 +4,7 @@ import ScrollToTop from "../components/common/ScrollTop";
 import Seo from "../components/common/seo";
 import '../public/assets/scss/components/index.scss'
 import "../styles/globals.css";
+import { StateContextProvider } from "../context/index";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -12,6 +13,7 @@ if (typeof window !== "undefined") {
 function MyApp({ Component, pageProps }) {
   return (
     <>
+     <StateContextProvider>
       <Seo
         font={
           "https://fonts.googleapis.com/css?family=Nunito:400,400i,500,600,700&display=swap"
@@ -22,6 +24,7 @@ function MyApp({ Component, pageProps }) {
       </Provider>
 
       <ScrollToTop />
+      </StateContextProvider>
     </>
   );
 }

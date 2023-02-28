@@ -20,6 +20,7 @@
     "chart.js": "^4.0.1",
     "date-fns": "^2.29.3",
     "dayjs": "1.11.6",
+    "firebase": "^9.17.1",
     "heroicons": "^2.0.16",
     "jquery": "^3.6.3",
     "moment": "^2.29.4",
