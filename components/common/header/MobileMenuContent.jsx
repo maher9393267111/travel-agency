@@ -261,13 +261,13 @@ const property = [
 ];
 
 const blog = [
-  { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-  { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
-  { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
+  { id: 1, name: "All Blog List ", routerPath: "/blogs" },
+  // { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
+  // { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
   {
     id: 4,
     name: "Blog Details",
-    routerPath: "/blog-details",
+    routerPath: "/blog/1",
   },
 ];
 
@@ -319,7 +319,8 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid mt20"
-                src="/assets/images/ogle-color-logo.png"
+                src=  '/assets/images/service-imgs/logoproject.jpeg'
+                // src="/assets/images/ogle-color-logo.png"
                 alt="header-logo.png"
               />
               <span className="brand-text">FindHouse</span>

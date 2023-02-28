@@ -30,14 +30,16 @@ const Header = () => {
           <a className="navbar_brand float-start dn-smd">
             <img
               className="logo1 img-fluid"
-              src="/assets/images/ogle-white-logo.png"
+            src=  '/assets/images/service/logoproject.jpeg'
+              // src="/assets/images/ogle-white-logo.png"
               alt="header-logo.png"
             />
 
             <div className="logo-div">
               <img
                 className="logo2 img-fluid"
-                src="/assets/images/ogle-color-logo.png"
+                src=  '/assets/images/service/logoproject.jpeg'
+                // src="/assets/images/ogle-color-logo.png"
                 alt="header-logo2.png"
               />
             </div>

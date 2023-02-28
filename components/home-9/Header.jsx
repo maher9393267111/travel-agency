@@ -29,12 +29,14 @@ const Header = () => {
         <a href="#" className="navbar_brand float-start dn-smd">
           <img
             className="logo1 img-fluid"
-            src="/assets/images/ogl"
+            src=  '/assets/images/service/logoproject.jpeg'
+            // src="/assets/images/ogl"
             alt="header-logo.png"
           />
           <img
             className="logo2 img-fluid"
-            src="/assets/images/ogle-color-logo.png"
+            src=  '/assets/images/service/logoproject.jpeg'
+            // src="/assets/images/ogle-color-logo.png"
             alt="header-logo2.png"
           />
           <span>FindHouse</span>

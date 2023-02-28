@@ -35,7 +35,8 @@ const Header = () => {
             />
             <img
               className="logo2 img-fluid"
-              src="/assets/images/ogle-color-logo.png"
+              // src="/assets/images/ogle-color-logo.png"
+              src=  '/assets/images/service-imgs/logoproject.jpeg'
               alt="header-logo2.png"
             />
             <span>FindHouse</span>

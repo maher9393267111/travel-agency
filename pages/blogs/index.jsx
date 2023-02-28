@@ -1,13 +1,14 @@
-import React from 'react'
-import BlogList2 from '../../components/blog-list-2/index'
+import dynamic from "next/dynamic";
+import Seo from "../../components/common/seo";
+import BlogV3 from "../../components/blog-list-3";
 
-export default function BlogsPage() {
+const index = () => {
   return (
-    <div>
+    <>
+      <Seo pageTitle="Blog Gid 3" />
+      <BlogV3 />
+    </>
+  );
+};
 
-<BlogList2/>
-
-
-    </div>
-  )
-}
+export default dynamic(() => Promise.resolve(index), { ssr: false });

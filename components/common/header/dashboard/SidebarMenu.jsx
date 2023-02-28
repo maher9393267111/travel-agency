@@ -40,7 +40,8 @@ const SidebarMenu = () => {
           <Link href="/">
             <a>
               <img
-                src="/assets/images/ogle-color-logo.png"
+                // src="/assets/images/ogle-color-logo.png"
+                src=  '/assets/images/service-imgs/logoproject.jpeg'
                 alt="header-logo2.png"
               />
               <span>FindHouse</span>
