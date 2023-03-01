@@ -1,7 +1,7 @@
 import Pagination from "../../common/blog/Pagination";
 import CopyrightFooter from "../../common/footer/CopyrightFooter";
 import Footer from "../../common/footer/Footer";
-import GlobalHeroFilter from "../../common/GlobalHeroFilter";
+// import GlobalHeroFilter from "../../common/GlobalHeroFilter";
 import Header from "../../common/header/DefaultHeader";
 import MobileMenu from "../../common/header/MobileMenu";
 import FilterTopBar from "../../common/listing/FilterTopBar";

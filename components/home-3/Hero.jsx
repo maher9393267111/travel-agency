@@ -1,4 +1,4 @@
-import GlobalHeroFilter from "../common/GlobalHeroFilter";
+
 import PopupVideo from "../common/PopupVideo";
 
 const Hero = () => {
@@ -21,11 +21,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <div className="row">
-          <div className="col-lg-12">
-            <GlobalHeroFilter className="home3" />
-          </div>
-        </div> */}
+       
       </div>
     </section>
   );

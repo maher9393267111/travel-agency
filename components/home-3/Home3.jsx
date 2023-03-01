@@ -1,6 +1,6 @@
 import MobileMenu from "../common/header/MobileMenu";
 import Header from "./Header";
-import GlobalHeroFilter from "../common/GlobalHeroFilter";
+
 import PopupVideo from "../common/PopupVideo";
 import FeaturedProperties from "./FeaturedProperties";
 import FindProperties from "./FindProperties";
