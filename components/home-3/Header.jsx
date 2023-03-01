@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import HeaderMenuContent from "../common/header/HeaderMenuContent";
+// import HeaderMenuContent from "../common/header/HeaderMenuContent";
+import HeaderMenuContent from "./headerContent";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -24,7 +25,7 @@ const Header = () => {
         navbar ? "stricky-fixed " : ""
       }`}
     >
-      <div className="container-fluid p0">
+      <div className="container-fluid p0  flex">
         {/* <!-- Ace Responsive Menu --> */}
 
         <Link href="/">
@@ -41,12 +42,12 @@ const Header = () => {
               src=  '/assets/images/service-imgs/logoproject.jpeg'
               alt="header-logo2.png"
             />
-            <span>FindHouse</span>
+            <span className=" mt-[17px]">Patagonia</span>
           </a>
         </Link>
         {/* site logo brand */}
 
-        <nav>
+        <nav className="  ml-12">
           <HeaderMenuContent />
         </nav>
         {/* End .navbar */}

@@ -323,7 +323,7 @@ const MobileMenuContent = () => {
                  src="/assets/images/ogle-color-logo.png"
                 alt="header-logo.png"
               />
-              <span className="brand-text">FindHouse</span>
+              <span className="brand-text">Patagonia</span>
             </a>
           </Link>
           {/* End .logo */}

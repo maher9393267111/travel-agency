@@ -38,7 +38,7 @@ const Header = () => {
               src="/assets/images/ogle-color-logo.png"
               alt="header-logo2.png"
             />
-            <span>FindHouse</span>
+            <span>Patagonia</span>
           </a>
         </Link>
         {/* site logo brand */}

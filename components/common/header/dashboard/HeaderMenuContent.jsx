@@ -9,7 +9,7 @@ const HeaderMenuContent = ({ float = "" }) => {
   const home = [
     {
       id: 1,
-      name: "Home 1",
+      name: "الرئيسية",
       routerPath: "/",
     },
    
@@ -20,11 +20,11 @@ const HeaderMenuContent = ({ float = "" }) => {
   const blog = [
     { id: 1, name: "All Blog List ", routerPath: "/blogs" },
  
-    {
-      id: 4,
-      name: "Blog Details",
-      routerPath: "/blog/1",
-    },
+    // {
+    //   id: 4,
+    //   name: "Blog Details",
+    //   routerPath: "/blogs/1",
+    // },
   ];
 
 

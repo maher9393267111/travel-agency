@@ -21,7 +21,7 @@ const SidebarMenu = () => {
                 // src=  '/assets/images/service-imgs/logoproject.jpeg'
                 alt="header-logo2.png"
               />
-              <span>FindHouse</span>
+              <span>Patagonia</span>
             </a>
           </Link>
         </li>

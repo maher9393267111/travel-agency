@@ -1,10 +1,10 @@
 /*******
-Project/Template Name:  FindHouse - Real Estate React Nextjs Template
+Project/Template Name:  Patagonia - Real Estate React Nextjs Template
 Template Url:  
 Author: ib-themes
 Author Url: https://themeforest.net/user/ib-themes/portfolio
 Version: 1.0
-Description: FindHouse - Real Estate React Nextjs Template
+Description: Patagonia - Real Estate React Nextjs Template
 Tag: advanced custom search, agency, agent, business, clean, corporate, directory, google maps, homes, idx agent, listing properties, membership packages, property, real broker, real estate, real estate agent, real estate agency, realtor
 
 ********/
@@ -18787,13 +18787,15 @@ legend span {
 
 .bg-img3 {
   background-attachment: scroll;
-  background-image: url("https://images.unsplash.com/photo-1490118121063-d12f8c4464ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-image: url("/assets/images/service-imgs/header-home.jpeg");
+  /* background-image: url("https://images.unsplash.com/photo-1490118121063-d12f8c4464ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"); */
   /* url("../images/background/3.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
-  height: 600px;
+  height:1135px; 
+  /* 600px; */
 }
 
 .bg-img4 {

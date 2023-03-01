@@ -12,7 +12,22 @@ import Ratings from "./Ratings";
 import RelatedPost from "./RelatedPost";
 import ReviewBox from "./ReviewBox";
 
-const index = () => {
+const index = ({data}) => {
+
+  const description = (desc) => {
+    let data = desc.split('>')[1].split('<')[0]
+    return data.length >= 250 ? data.slice(0, 650) : data
+}
+const title = (data) => {
+    return data.length >= 50 ? data.slice(0, 50) + "..." : data
+}
+
+
+
+
+
+
+
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -35,32 +50,34 @@ const index = () => {
           {/* End .row */}
 
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-10">
               <div className="main_blog_post_content">
                 <div className="mbp_thumb_post">
                   <div className="blog_sp_tag">
-                    <a href="#">Construction</a>
+                    <a href="#">Blog</a>
                   </div>
                   <h3 className="blog_sp_title">
-                    Redfin Ranks the Most Competitive Neighborhoods of 2020
+
+{title(data?.title)}
+                    {/* Redfin Ranks the Most Competitive Neighborhoods of 2020 */}
                   </h3>
                   <ul className="blog_sp_post_meta">
                     <li className="list-inline-item">
                       <a href="#">
                         <img
-                          src="assets/images/property/pposter1.png"
+                          src="/assets/images/property/pposter1.png"
                           alt="pposter1.png"
                         />
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">Ali Tufan</a>
+                      <a href="#">ADMIN</a>
                     </li>
                     <li className="list-inline-item">
                       <span className="flaticon-calendar"></span>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">January 16, 2020</a>
+                      <a href="#">{data?.date}</a>
                     </li>
                     <li className="list-inline-item">
                       <span className="flaticon-view"></span>
@@ -71,81 +88,31 @@ const index = () => {
                     <li className="list-inline-item">
                       <span className="flaticon-chat"></span>
                     </li>
-                    <li className="list-inline-item">
+                    {/* <li className="list-inline-item">
                       <a href="#">15</a>
-                    </li>
+                    </li> */}
                   </ul>
                   <div className="thumb">
                     <img
-                      className="img-fluid"
-                      src="assets/images/blog/bs1.jpg"
+                      className="img-fluid  w-full h-[600px]  object-cover"
+                      src={data?.image[0]?.url}
+                      // src="assets/images/blog/bs1.jpg"
                       alt="bs1.jpg"
                     />
                   </div>
 
                   <div className="details">
                     <p className="mb30">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      { description(data?.description)}...
+                      {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Duis mollis et sem sed sollicitudin. Donec non odio neque.
                       Aliquam hendrerit sollicitudin purus, quis rutrum mi
                       accumsan nec. Quisque bibendum orci ac nibh facilisis, at
                       malesuada orci congue. Nullam tempus sollicitudin cursus.
                       Ut et adipiscing erat. Curabitur this is a text link
-                      libero tempus congue.
+                      libero tempus congue. */}
                     </p>
-                    <p className="mb30">
-                      Duis mattis laoreet neque, et ornare neque sollicitudin
-                      at. Proin sagittis dolor sed mi elementum pretium. Donec
-                      et justo ante. Vivamus egestas sodales est, eu rhoncus
-                      urna semper eu. Cum sociis natoque penatibus et magnis dis
-                      parturient montes, nascetur ridiculus mus. Integer
-                      tristique elit lobortis purus bibendum, quis dictum metus
-                      mattis. Phasellus posuere felis sed eros porttitor mattis.
-                      Curabitur massa magna, tempor in blandit id, porta in
-                      ligula. Aliquam laoreet nisl massa, at interdum mauris
-                      sollicitudin et.
-                    </p>
-                    <h4 className="mb15">
-                      Housing Markets That Changed the Most This Decade
-                    </h4>
-                    <p>
-                      Nullam tempus sollicitudin cursus. Nulla elit mauris,
-                      volutpat eu varius malesuada, pulvinar eu ligula. Ut et
-                      adipiscing erat. Curabitur adipiscing erat vel libero
-                      tempus congue. Nam pharetra interdum vestibulum. Aenean
-                      gravida mi non aliquet porttitor. Praesent dapibus, nisi a
-                      faucibus tincidunt, quam dolor condimentum metus, in
-                      convallis libero ligula ut eros.
-                    </p>
-                    <div className="mbp_blockquote">
-                      <div className="blockquote">
-                        <span className="font-italic">
-                          <i className="fa fa-quote-left"></i>
-                        </span>
-                        <br />
-                        <em className="mb-0">
-                          Duis mollis et sem sed sollicitudin. Donec non odio
-                          neque. Aliquam hendrerit sollicitudin purus, quis
-                          rutrum mi accumsan nec.
-                        </em>
-                      </div>
-                    </div>
-                    <p className="mb25">
-                      Curabitur massa magna, tempor in blandit id, porta in
-                      ligula. Aliquam laoreet nisl massa, at interdum mauris
-                      sollicitudin et. Mauris risus lectus, tristique at nisl
-                      at, pharetra tristique enim.
-                    </p>
-                    <p className="mb25">
-                      Nullam this is a link nibh facilisis, at malesuada orci
-                      congue. Nullam tempus sollicitudin cursus. Nulla elit
-                      mauris, volutpat eu varius malesuada, pulvinar eu ligula.
-                      Ut et adipiscing erat. Curabitur adipiscing erat vel
-                      libero tempus congue. Nam pharetra interdum vestibulum.
-                      Aenean gravida mi non aliquet porttitor. Praesent dapibus,
-                      nisi a faucibus tincidunt, quam dolor condimentum metus,
-                      in convallis libero ligula ut eros.
-                    </p>
+                 
                   </div>
                   <ul className="blog_post_share">
                     <li>
@@ -157,12 +124,12 @@ const index = () => {
                 </div>
                 {/* End .mbp_thumb_post */}
 
-                <div className="mbp_pagination_tab">
+                {/* <div className="mbp_pagination_tab">
                   <Pagination />
-                </div>
+                </div> */}
                 {/* End mbp_pagination_tab */}
 
-                <div className="product_single_content mb30">
+                {/* <div className="product_single_content mb30">
                   <div className="mbp_pagination_comments">
                     <div className="total_review">
                       <h4>896 Reviews</h4>
@@ -176,15 +143,18 @@ const index = () => {
                         Write a Review
                       </a>
                     </div>
-                    {/* End .total_review */}
+               
 
                     <Comments />
                     <div className="custom_hr"></div>
                   </div>
-                </div>
+                </div> */}
+
+
+
                 {/* End .product_single_content  */}
 
-                <div className="bsp_reveiw_wrt">
+                {/* <div className="bsp_reveiw_wrt">
                   <h4>Write a Review</h4>
 
                   <ul className="review_star">
@@ -200,13 +170,13 @@ const index = () => {
                     </li>
                   </ul>
                   <ReviewBox />
-                </div>
+                </div> */}
                 {/* End .bsp_reveiw_wrt */}
               </div>
               {/* End .main_blog_post_content */}
 
               <div className="row">
-                <div className="col-lg-12 mb20">
+                <div className="col-lg-12 mb20 mt-12">
                   <h4>Related Posts</h4>
                 </div>
                 <RelatedPost />
@@ -214,9 +184,9 @@ const index = () => {
             </div>
             {/* End .col */}
 
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <BlogSidebar />
-            </div>
+            </div> */}
             {/* End Sidebar column */}
           </div>
           {/* End .row */}

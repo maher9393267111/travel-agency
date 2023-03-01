@@ -7,7 +7,7 @@ import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
 
-const index = () => {
+const index = ({data}) => {
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -32,7 +32,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
-                <Blog />
+                <Blog data={data} />
                 {/* End blog item */}
               </div>
               {/* End .row */}

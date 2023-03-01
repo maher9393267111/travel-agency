@@ -13,7 +13,7 @@ const MobileMenu = () => {
               src="/assets/images/ogle-color-logo.png"
               alt="header-logo2.png"
             />
-            <span className="mt20">FindHouse</span>
+            <span className="mt20">Patagonia</span>
           </div> */}
           {/* main_logo_home2 */}
 

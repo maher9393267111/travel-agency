@@ -40,7 +40,7 @@ const Header = () => {
               // src="assets/images/header-logo2.png"
               alt="header-logo2.png"
             />
-            <span>FindHouse</span>
+            <span>Patagonia</span>
           </a>
         </Link>
         {/* site logo brand */}

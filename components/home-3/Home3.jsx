@@ -26,8 +26,31 @@ const Home3 = () => {
       {/* <!-- Home Design --> */}
       <Hero />
 
-      {/* <!-- Feature Properties --> */}
-      <section id="feature-property" className="feature-property mt80 pb50">
+  
+
+      {/* <!-- Property Cities --> */}
+      <section id="property-city" className="property-city pt0 pb30 mt-12">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="main-title    ml-12 font-serif  font-semibold  text-2xl">
+              <h2>بعض البلدان التي نقدم فيها خدماتنا</h2>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                <a className="float-end" href="#">
+                  View All <span className="flaticon-next"></span>
+                </a>
+              </p> */}
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <FindProperties />
+        </div>
+      </section>
+
+
+    {/* <!-- Feature Properties --> */}
+    <section id="feature-property" className="feature-property mt80 pb50">
         <div className="row">
           <div className="col-lg-12">
             <div className="main-title mb40">
@@ -48,25 +71,8 @@ const Home3 = () => {
         </div>
       </section>
 
-      {/* <!-- Property Cities --> */}
-      <section id="property-city" className="property-city pt0 pb30">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="main-title   ml-12 font-serif  font-semibold  text-2xl">
-              <h2>بعض البلدان التي نقدم فيها خدماتنا</h2>
-              {/* <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                <a className="float-end" href="#">
-                  View All <span className="flaticon-next"></span>
-                </a>
-              </p> */}
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <FindProperties />
-        </div>
-      </section>
+
+
 
       {/* <!-- Property Search --> */}
       <section id="property-search" className="property-search bg-img4">

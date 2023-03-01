@@ -44,7 +44,7 @@ const Header = () => {
               />
             </div>
 
-            {/* <span>FindHouse</span> */}
+            {/* <span>Patagonia</span> */}
           </a>
         </Link>
         {/* site logo brand */}
