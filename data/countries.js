@@ -377,7 +377,7 @@ items:[
     id: 5,
     title: "اوزبكستان ",
 
-    image:'https://images.unsplash.com/photo-1652807517216-6a8aed433f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1295&q=80',
+    image:'https://www.gokbayraktekstil.com.tr/upload/cache/upload/ckfinder/files/urunler/devlet-ulke-bayraklari/ozbekistan-520x360.jpg',
     
     items:[
     
@@ -439,11 +439,11 @@ items:[
 {
     id: 6,
     title: "قيرغيستان",
+    image:"https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg" ,
     items: [
       {
         name: " تأشيره قيرغيستان",
-        routerPath: "/country/?country=6&service=visa",
-        mainImage:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/6a/e9/caption.jpg?w=500&h=300&s=1",
+        routerPath: "",
         images:[],
         query:'visa',
         desc:'',

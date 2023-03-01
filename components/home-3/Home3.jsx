@@ -31,9 +31,9 @@ const Home3 = () => {
       {/* <!-- Property Cities --> */}
       <section id="property-city" className="property-city pt0 pb30 mt-12">
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12 text-center">
             <div className="main-title    ml-12 font-serif  font-semibold  text-2xl">
-              <h2>بعض البلدان التي نقدم فيها خدماتنا</h2>
+              <h2 className="  m-auto w-1/4  p-2 rounded-md text-white bg-red-500">بعض البلدان التي نقدم فيها خدماتنا</h2>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
                 <a className="float-end" href="#">
@@ -43,7 +43,7 @@ const Home3 = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row m-4">
           <FindProperties />
         </div>
       </section>
@@ -53,14 +53,16 @@ const Home3 = () => {
     <section id="feature-property" className="feature-property mt80 pb50">
         <div className="row">
           <div className="col-lg-12">
-            <div className="main-title mb40">
-              <h2>Featured Properties</h2>
-              <p>
+            <div className="main-title mb40 text-center">
+              <h2
+              className="m-auto w-1/4  text-2xl p-2 rounded-md text-white bg-red-500"
+              >خدمات مميزة</h2>
+              {/* <p>
                 Handpicked properties by our team.{" "}
                 <a className="float-end" href="#">
                   View All <span className="flaticon-next"></span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="col-lg-12">

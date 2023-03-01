@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="home3_home_content ml-12">
               <h1>Patagonia</h1>
               <h4 className="  text-3xl">
-                Enjoy  Journey ,Not The destination
+                Enjoy the Journey ,Not The destination
               </h4>
             </div>
           </div>

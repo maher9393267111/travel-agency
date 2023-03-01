@@ -18790,11 +18790,11 @@ legend span {
   background-image: url("/assets/images/service-imgs/header-home.jpeg");
   /* background-image: url("https://images.unsplash.com/photo-1490118121063-d12f8c4464ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"); */
   /* url("../images/background/3.jpg"); */
-  background-position: center;
+  background-position: bottom center;;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
-  height:1135px; 
+  /* height:700px;  */
   /* 600px; */
 }
 
@@ -21229,4 +21229,15 @@ button.gm-ui-hover-effect:focus {
 .img-style{
   width: 377px !important;
   height: 350px !important;
+  background-position: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .img-style{
+    width: 500px !important;
+    height: 300px !important;
+    background-position: center;
+  }
 }
