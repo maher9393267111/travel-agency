@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import Seo from "../../components/common/seo";
 import MyFavourites from "../../components/dashboard/my-favourites";
 import { db } from "../../firebase";
+import { createGlobalStyle } from "styled-components";
+import { collection, getDocs } from "firebase/firestore";
 
 const AdminBlogs = ({  data}) => {
 
@@ -27,6 +29,7 @@ export async function getStaticProps() {
       const querySnapshot = await getDocs(collection(db, 'blog'));
   
       querySnapshot.forEach((doc) => {
+        console.log('doc', doc);
         data.push({
           id: doc.id,
           ...doc.data(),
