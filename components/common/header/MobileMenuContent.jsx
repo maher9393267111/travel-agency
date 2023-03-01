@@ -17,42 +17,7 @@ const home = [
     name: "Home 1",
     routerPath: "/",
   },
-  {
-    name: "Home 2",
-    routerPath: "/home-2",
-  },
-  {
-    name: "Home 3",
-    routerPath: "/home-3",
-  },
-  {
-    name: "Home 4",
-    routerPath: "/home-4",
-  },
-  {
-    name: "Home 5",
-    routerPath: "/home-5",
-  },
-  {
-    name: "Home 6",
-    routerPath: "/home-6",
-  },
-  {
-    name: "Home 7",
-    routerPath: "/home-7",
-  },
-  {
-    name: "Home 8",
-    routerPath: "/home-8",
-  },
-  {
-    name: "Home 9",
-    routerPath: "/home-9",
-  },
-  {
-    name: "Home 10",
-    routerPath: "/home-10",
-  },
+ 
 ];
 
 const listing = [
@@ -193,72 +158,7 @@ const listing = [
 
 
 
-const property = [
-  {
-    id: 1,
-    title: "User Admin",
-    items: [
-      {
-        name: "Dashboard",
-        routerPath: "/my-dashboard",
-      },
-      {
-        name: "My Properties",
-        routerPath: "/my-properties",
-      },
-      {
-        name: "My Message",
-        routerPath: "/my-message",
-      },
-      {
-        name: "My Review",
-        routerPath: "/my-review",
-      },
-      {
-        name: "My Favourites",
-        routerPath: "/my-favourites",
-      },
-      {
-        name: "My Profile",
-        routerPath: "/my-profile",
-      },
-      {
-        name: "My Package",
-        routerPath: "/my-package",
-      },
-      {
-        name: "My Saved Search",
-        routerPath: "/my-saved-search",
-      },
-      {
-        name: "Add Property",
-        routerPath: "/create-listing",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Listing Single",
-    items: [
-      {
-        name: "Single V1",
-        routerPath: "/listing-details-v1",
-      },
-      {
-        name: "Single V2",
-        routerPath: "/listing-details-v2",
-      },
-      {
-        name: "Single V3",
-        routerPath: "/listing-details-v3",
-      },
-      {
-        name: "Single V4",
-        routerPath: "/listing-details-v4",
-      },
-    ],
-  },
-];
+
 
 const blog = [
   { id: 1, name: "All Blog List ", routerPath: "/blogs" },
@@ -271,43 +171,6 @@ const blog = [
   },
 ];
 
-const pages = [
-  {
-    name: "About Us",
-    routerPath: "/about-us",
-  },
-  {
-    name: "Gallery",
-    routerPath: "/gallery",
-  },
-  {
-    name: "Faq",
-    routerPath: "/faq",
-  },
-  {
-    name: "LogIn",
-    routerPath: "/login",
-  },
-  { name: "Compare", routerPath: "/compare" },
-  { name: "Membership", routerPath: "/membership" },
-
-  {
-    name: "Register",
-    routerPath: "/register",
-  },
-  {
-    name: "Service",
-    routerPath: "/service",
-  },
-  {
-    name: "404 Page",
-    routerPath: "/404",
-  },
-  {
-    name: "Terms & Conditions",
-    routerPath: "/terms",
-  },
-];
 
 const MobileMenuContent = () => {
   const route = useRouter();
@@ -318,9 +181,9 @@ const MobileMenuContent = () => {
           <Link href="/">
             <a className="sidebar-header-inner">
               <img
-                className="nav_logo_img img-fluid mt20"
-                // src=  '/assets/images/service-imgs/logoproject.jpeg'
-                 src="/assets/images/ogle-color-logo.png"
+                className="nav_logo_img  w-[70px]  h-[70px] img-fluid mt20"
+                 src=  '/assets/images/service-imgs/logoproject.jpeg'
+                //  src="/assets/images/ogle-color-logo.png"
                 alt="header-logo.png"
               />
               <span className="brand-text">Patagonia</span>
@@ -341,9 +204,35 @@ const MobileMenuContent = () => {
         {/* End logo */}
       </SidebarHeader>
 
+
+
+
+
+
+
+
+
       <SidebarContent>
         <Menu>
-          <SubMenu
+
+
+        <MenuItem>
+            <Link href="/">
+              <a
+                className={
+                  route.pathname === "/" ? "ui-active" : undefined
+                }
+              >
+                الرئيسية
+                {/* <span className="flaticon-edit"></span>  */}
+              </a>
+            </Link>
+          </MenuItem>
+
+
+
+
+          {/* <SubMenu
             title="الرئيسية"
             className={
               home.some((page) => page.routerPath === route.pathname)
@@ -366,7 +255,7 @@ const MobileMenuContent = () => {
                 </Link>
               </MenuItem>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End Home Home */}
 
           <SubMenu
@@ -414,7 +303,7 @@ const MobileMenuContent = () => {
        
           {/* End Pages Property */}
 
-          <SubMenu
+          {/* <SubMenu
             title="Blog"
             className={
               blog.some(
@@ -442,7 +331,7 @@ const MobileMenuContent = () => {
                 </Link>
               </MenuItem>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End pages Blog */}
 
       
@@ -451,28 +340,36 @@ const MobileMenuContent = () => {
      
 
           <MenuItem>
+            <Link href="/">
+              <a
+                className={
+                  route.pathname === "/blogs" ? "ui-active" : undefined
+                }
+              >
+                المدونة
+                {/* <span className="flaticon-edit"></span>  */}
+              </a>
+            </Link>
+          </MenuItem>
+
+
+
+
+
+          <MenuItem>
             <Link href="/login">
               <a
                 className={
                   route.pathname === "/login" ? "ui-active" : undefined
                 }
               >
-                <span className="flaticon-user"></span> Login
+                <span className="flaticon-user"></span> 
+                تسجيل دخول
               </a>
             </Link>
           </MenuItem>
 
-          <MenuItem>
-            <Link href="/register">
-              <a
-                className={
-                  route.pathname === "/register" ? "ui-active" : undefined
-                }
-              >
-                <span className="flaticon-edit"></span> Register
-              </a>
-            </Link>
-          </MenuItem>
+       
         </Menu>
       </SidebarContent>
 
