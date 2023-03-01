@@ -14,7 +14,7 @@ const AdminBlogs = ({  data}) => {
   return (
     <>
       <Seo pageTitle="My Favourites" />
-      <MyFavourites />
+      <MyFavourites blogs={data} />
     </>
   );
 };

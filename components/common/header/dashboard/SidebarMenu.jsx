@@ -8,30 +8,7 @@ import {
 const SidebarMenu = () => {
   const route = useRouter();
 
-  const myProperties = [
-    { id: 1, name: "General Elements", route: "/my-properties" },
-    { id: 2, name: "Advanced Elements", route: "/my-properties" },
-    { id: 3, name: "Editors", route: "/my-properties" },
-  ];
-  const reviews = [
-    { id: 1, name: "My Reviews", route: "/my-review" },
-    { id: 2, name: "Visitor Reviews", route: "/my-review" },
-  ];
-  const manageAccount = [
-    {
-      id: 1,
-      name: "My Package",
-      route: "/my-package",
-      icon: "flaticon-box",
-    },
-    {
-      id: 2,
-      name: "My Profile",
-      route: "/my-profile",
-      icon: "flaticon-user",
-    },
-    { id: 3, name: "Logout", route: "/login", icon: "flaticon-logout" },
-  ];
+  
 
   return (
     <>
@@ -55,12 +32,12 @@ const SidebarMenu = () => {
           <ul>
             <li
               className={`treeview ${
-                isSinglePageActive("/my-dashboard", route.pathname)
+                isSinglePageActive("/admin", route.pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/admin">
                 <a>
                   <i className="flaticon-layers"></i>
                   <span> Dashboard</span>
@@ -69,12 +46,12 @@ const SidebarMenu = () => {
             </li>
             <li
               className={`treeview ${
-                isSinglePageActive("admin", route.pathname)
+                isSinglePageActive("/admin", route.pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/create-blog">
+              <Link href="/admin">
                 <a>
                   <i className="flaticon-plus"></i>
                   <span> Create Blog </span>
@@ -90,7 +67,7 @@ const SidebarMenu = () => {
                   : ""
               }`}
             >
-              <Link href="admin/all-blogs">
+              <Link href="/admin/allblogs">
                 <a>
                   <i className="flaticon-plus"></i>
                   <span> All Blogs </span>

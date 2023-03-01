@@ -1,12 +1,14 @@
-import { auth } from "../firebase";
+import { auth , db } from "../firebase";
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
-
+import { deleteDoc, getDocs , doc } from "@firebase/firestore";
+import { toast } from "react-toastify";
 export const StateContext = createContext()
 
 export const StateContextProvider = ({ children }) => {
     const [alert, setAlert] = useState({ isShow: false, duration: 3000, message: "", type: "" })
     const [pageLoading, setPageLoading] = useState(true)
+    const [Loading, setLoading] = useState(false)
     const [user, setUser] = useState()
 
     const signInUser = async (email, password) => {
@@ -30,6 +32,33 @@ export const StateContextProvider = ({ children }) => {
             unsubscribe();
         };
     }, []);
+
+
+
+  const handleDelete = async (blog) => {
+    try {
+
+      setLoading(true);
+
+      console.log('blog object CLICKEDDDDD' , blog)
+    
+      await deleteDoc(doc(db, "blog", blog.id));
+      console.log("Document successfully deleted!");
+      toast.success('Blog deleted successfully')
+      window.location.reload
+
+    } catch (error) {
+      console.error("Error removing document: ", error);
+      toast.error({message:error})
+
+      setLoading(false)
+    }
+    
+  };
+
+
+
+
     return (
         <StateContext.Provider value={{
             alert,
@@ -37,7 +66,8 @@ export const StateContextProvider = ({ children }) => {
             user,
             pageLoading,
             signInUser,
-            logout
+            logout,
+            handleDelete 
         }}>
             {children}
         </StateContext.Provider>

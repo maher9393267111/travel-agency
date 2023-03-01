@@ -88,7 +88,10 @@ const handleRemoveImage = (image) => {
                       title="Delete"
                       data-original-title="Delete"
                     >
-                      <a onClick={() => deleteImage(item.name)}>
+                      <a onClick={() =>
+                      handleRemoveImage(item)
+                        //  deleteImage(item.name)
+                         }>
                         <span className="flaticon-garbage"></span>
                       </a>
                     </div>
