@@ -18,7 +18,37 @@ const BlogsPage = ({data}) => {
 export default  BlogsPage;
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+//   const datais = [];
+
+//   try {
+//     const querySnapshot = await getDocs(collection(db, 'blog'));
+
+//     querySnapshot.forEach((doc) => {
+//       datais.push({
+//         id: doc.id,
+      
+//         ...doc.data()
+      
+//       });
+//     });
+//   } catch (error) {
+//     console.error(error);
+//   }
+ 
+
+
+//   return {
+//     props: {
+//       data:datais
+//     },
+//     revalidate: 1,
+//   };
+// }
+
+
+
+BlogsPage.getInitialProps = async (context) => {
   const datais = [];
 
   try {
@@ -35,25 +65,13 @@ export async function getStaticProps() {
   } catch (error) {
     console.error(error);
   }
- 
-    // sortBy(datais, ["data"]);
 
 
-    // const sortedArray = orderBy(datais, (o) => {
-    //   return moment(o.date.format('YYYYMMDD'))
-    // }, ['asc']);
-
-
- //console.log('data is sorted' , sortedArray);
 
   return {
-    props: {
-      data:datais
-    },
-    revalidate: 1,
+    data: datais,
   };
-}
-
+};
 
 
 
