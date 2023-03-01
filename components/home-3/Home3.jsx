@@ -33,7 +33,7 @@ const Home3 = () => {
         <div className="row">
           <div className="col-lg-12 text-center">
             <div className="main-title    ml-12 font-serif  font-semibold  text-2xl">
-              <h2 className="  m-auto w-1/4  p-2 rounded-md text-white bg-red-500">بعض البلدان التي نقدم فيها خدماتنا</h2>
+              <h2 className="  m-auto w-3/4 md:w-1/4  p-2 rounded-md text-white bg-red-500">بعض البلدان التي نقدم فيها خدماتنا</h2>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
                 <a className="float-end" href="#">
@@ -66,7 +66,7 @@ const Home3 = () => {
             </div>
           </div>
           <div className="col-lg-12">
-            <div className="feature_property_home3_slider gutter-x15">
+            <div className="feature_property_home3_slider gutter-x15 mx-12">
               <FeaturedProperties />
             </div>
           </div>
@@ -77,7 +77,7 @@ const Home3 = () => {
 
 
       {/* <!-- Property Search --> */}
-      <section id="property-search" className="property-search bg-img4">
+      <section id="property-search" className="property-search bg-img4 mx-12">
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div className="search_smart_property text-center">
@@ -93,7 +93,7 @@ const Home3 = () => {
       </section>
 
       {/* <!-- Property Cities --> */}
-      <section id="best-property" className="best-property pt100 pb0">
+      {/* <section id="best-property" className="best-property pt100 pb0">
         <div className="row">
           <div className="col-lg-12">
             <div className="main-title">
@@ -110,10 +110,10 @@ const Home3 = () => {
         <div className="row">
           <BestProperties />
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Agents --> */}
-      <section id="our-agents" className="our-agents pt40 pb30">
+      {/* <section id="our-agents" className="our-agents pt40 pb30">
         <div className="row">
           <div className="col-lg-12">
             <div className="main-title">
@@ -127,13 +127,13 @@ const Home3 = () => {
             </div>
           </div>
         </div>
-        {/* End .row */}
+   
 
         <div className="row">
           <AgentsTeam />
         </div>
-        {/* End .row */}
-      </section>
+      
+      </section> */}
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one home3">

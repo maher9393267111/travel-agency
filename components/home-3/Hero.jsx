@@ -16,7 +16,8 @@ const Hero = () => {
           </div>
 
           <div className="col-lg-4">
-            <div className="home3_home_content">
+            <div className="home3_home_content  hidden md:block">
+
               <PopupVideo />
             </div>
           </div>

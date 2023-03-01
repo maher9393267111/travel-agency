@@ -8,7 +8,7 @@ const HeaderMenuContent = ({ float = "" }) => {
   const home = [
     {
       id: 1,
-      name: "Home 1",
+      name: "الرئيسية",
       routerPath: "/",
     },
     // { id: 2, name: "Home 2", routerPath: "/home-2" },
