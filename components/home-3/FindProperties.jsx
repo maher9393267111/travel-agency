@@ -19,7 +19,7 @@ const FindProperties = () => {
               </div>
               <div className="overlay">
                 <div className="details">
-                  <h4>{item.name}</h4>
+                  <h4>{item?.title}</h4>
                   {/* <p>{item.items?.length} Properties</p> */}
                 </div>
               </div>

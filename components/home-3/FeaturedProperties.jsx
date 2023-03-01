@@ -65,12 +65,12 @@ const FeaturedProperties = () => {
                     </li>
                   </ul>
 
-                  <Link href={`/listing-details-v1/${item.id}`}>
+                   {/* <Link href={`/listing-details-v1/${item.id}`}>
                     <a className="fp_price">
                       ${item.price}
                       <small>/mo</small>
                     </a>
-                  </Link>
+                  </Link>  */}
                 </div>
               </div>
 
@@ -82,12 +82,12 @@ const FeaturedProperties = () => {
                       <a>{item.title}</a>
                     </Link>
                   </h4>
-                  <p>
+                  {/* <p>
                     <span className="flaticon-placeholder"></span>
                     {item.location}
-                  </p>
+                  </p> */}
 
-                  <ul className="prop_details mb0">
+                  {/* <ul className="prop_details mb0">
                     {item.itemDetails.map((val, i) => (
                       <li className="list-inline-item" key={i}>
                         <a href="#">
@@ -95,7 +95,7 @@ const FeaturedProperties = () => {
                         </a>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>

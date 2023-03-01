@@ -13,6 +13,13 @@ const title = (data) => {
 
 
 
+const parseHtml = (desc) => {
+ let data = desc.replace(/(<([^>]+)>)/gi, '')
+
+ return data.length >= 150 ? data.slice(0, 150) : data
+
+}
+
 
 
   return (
@@ -104,7 +111,7 @@ const title = (data) => {
                     <a href="#">   {item.date}</a>
                   </li>
                 </ul>
-                <p> {description(item.description)}...</p>
+                <p> { parseHtml(item?.description)}...</p>
               </div>
              
 

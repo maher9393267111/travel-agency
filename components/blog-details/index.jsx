@@ -16,15 +16,22 @@ const index = ({data}) => {
 
   const description = (desc) => {
     let data = desc.split('>')[1].split('<')[0]
-    return data.length >= 250 ? data.slice(0, 650) : data
+   console.log('description-->' , data)
+    // data.length >= 250 ? data.slice(0, 650) :
+    return  data
 }
 const title = (data) => {
     return data.length >= 50 ? data.slice(0, 50) + "..." : data
 }
 
 
+// const getText = (html) =>{
+//   const doc = new DOMParser().parseFromString(html, "text/html")
+//   return doc.body.textContent
+// }
 
 
+const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
 
 
 
@@ -103,7 +110,9 @@ const title = (data) => {
 
                   <div className="details">
                     <p className="mb30">
-                      { description(data?.description)}...
+                      {parsedHtml}
+                    {/* {getText(data?.description)} */}
+                      {/* { description(data?.description)}... */}
                       {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Duis mollis et sem sed sollicitudin. Donec non odio neque.
                       Aliquam hendrerit sollicitudin purus, quis rutrum mi
