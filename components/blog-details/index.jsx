@@ -184,12 +184,12 @@ const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
               </div>
               {/* End .main_blog_post_content */}
 
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-lg-12 mb20 mt-12">
                   <h4>Related Posts</h4>
                 </div>
                 <RelatedPost />
-              </div>
+              </div> */}
             </div>
             {/* End .col */}
 
