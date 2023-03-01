@@ -3,6 +3,8 @@ import Seo from "../../components/common/seo";
 import BlogV3 from "../../components/blog-list-3";
 import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
+import { find, findIndex, remove, sortBy ,orderBy } from "lodash";
+import moment from "moment/moment";
 
 const BlogsPage = ({data}) => {
   return (
@@ -17,26 +19,38 @@ export default  BlogsPage;
 
 
 export async function getStaticProps() {
-  const data = [];
+  const datais = [];
 
   try {
     const querySnapshot = await getDocs(collection(db, 'blog'));
 
     querySnapshot.forEach((doc) => {
-      data.push({
+      datais.push({
         id: doc.id,
-        ...doc.data(),
+      
+        ...doc.data()
+      
       });
     });
   } catch (error) {
     console.error(error);
   }
+ 
+    // sortBy(datais, ["data"]);
+
+
+    // const sortedArray = orderBy(datais, (o) => {
+    //   return moment(o.date.format('YYYYMMDD'))
+    // }, ['asc']);
+
+
+ //console.log('data is sorted' , sortedArray);
 
   return {
     props: {
-      data,
+      data:datais
     },
-    revalidate: 60,
+    revalidate: 6,
   };
 }
 
