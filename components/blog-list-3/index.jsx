@@ -36,15 +36,15 @@ const index = ({data}) => {
                 {/* End blog item */}
               </div>
               {/* End .row */}
-
+{/* 
               <div className="row">
                 <div className="col-lg-12">
                   <div className="mbp_pagination mt20">
                     <Pagination />
                   </div>
-                  {/* End .mbp_pagination */}
+         
                 </div>
-              </div>
+              </div> */}
               {/* End .row */}
             </div>
             {/* End .col */}

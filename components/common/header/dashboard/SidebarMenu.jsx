@@ -17,8 +17,9 @@ const SidebarMenu = () => {
           <Link href="/">
             <a>
               <img
-                 src="/assets/images/ogle-color-logo.png"
-                // src=  '/assets/images/service-imgs/logoproject.jpeg'
+              className=" w-[70px] h-[70px] rounded-xl"
+                //  src="/assets/images/ogle-color-logo.png"
+                 src=  '/assets/images/service-imgs/logoproject.jpeg'
                 alt="header-logo2.png"
               />
               <span>Patagonia</span>
