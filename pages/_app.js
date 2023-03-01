@@ -7,6 +7,7 @@ import "../styles/globals.css";
 import { StateContextProvider } from "../context/index";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import "node_modules/video-react/dist/video-react.css"; // import css
 
 
 if (typeof window !== "undefined") {
