@@ -32,6 +32,7 @@ const index = () => {
   const [title, setTitle] = useState("");
   const [images, setImages] = useState([])
   const [loading, setLoading] = useState(false)
+  const [country , setCountry] = useState('')
   const { replace } = useRouter()
   const handleClick = async () => {
     setLoading(true)
@@ -54,18 +55,21 @@ const index = () => {
 
  
 
-      if (title !== '' && value !== '' && images.length !==0 ) {
+      if (title !== '' && value !== '' && images.length !==0   && country !== '') {
 
 
       await addDoc(collection(db, 'blog'), {
         title,
         description: value,
         image: firebaseImages,
+        country: country,
         date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss")
       })
       setTitle("")
       setImages([])
       setValue("")
+      setCountry('')
+
       toast.success("Blog created");
     }
 
@@ -156,7 +160,7 @@ else {
                       </div>
 
                       <CreateList
-                      {...{ setTitle, title, value, setValue, handleClick, setImages, setAlert, setLoading, images }}
+                      {...{ setTitle, title, value, setValue, handleClick, setImages, setAlert, setLoading, images , country,setCountry }}
                       
                       />
                     </div>

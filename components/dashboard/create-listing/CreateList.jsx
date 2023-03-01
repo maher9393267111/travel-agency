@@ -10,7 +10,7 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
 })
 
 
-const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, setLoading }) => {
+const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, setLoading , country , setCountry }) => {
 
 
 
@@ -50,25 +50,28 @@ const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, s
       </div>
       {/* End .col */}
 
-      <div className="col-lg-6 col-xl-6">
+      <div className="col-lg-10 col-xl-12">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Type</label>
+          <label> Select Country</label>
           <select
+             onChange={(e) => setCountry(e.target.value)}
             className="selectpicker form-select"
             data-live-search="true"
             data-width="100%"
           >
-            <option data-tokens="type1">Type1</option>
-            <option data-tokens="Type2">Type2</option>
-            <option data-tokens="Type3">Type3</option>
-            <option data-tokens="Type4">Type4</option>
-            <option data-tokens="Type5">Type5</option>
+            <option  value ='croatia'  data-tokens="type1">Croatia</option>
+            <option  value ='sauid'   data-tokens="Type2">Sauid arabistan</option>
+            <option value='uzbakistan'  data-tokens="Type3">Uzbakistan</option>
+            <option  value ="emirates" data-tokens="Type4">Emirates</option>
+            <option value='kirgistan'  data-tokens="Type5">kirgistan</option>
           </select>
         </div>
       </div>
+
+      {/* {country} */}
       {/* End .col */}
 
-      <div className="col-lg-6 col-xl-6">
+      {/* <div className="col-lg-6 col-xl-6">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
           <label>Status</label>
           <select
@@ -83,10 +86,10 @@ const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, s
             <option data-tokens="Status5">Status5</option>
           </select>
         </div>
-      </div>
+      </div> */}
       {/* End .col */}
 
-      <div className="col-lg-4 col-xl-4">
+      {/* <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
           <label htmlFor="formGroupExamplePrice">Price</label>
           <input
@@ -95,7 +98,7 @@ const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, s
             id="formGroupExamplePrice"
           />
         </div>
-      </div>
+      </div> */}
       {/* End .col */}
 
       <div className="col-lg-4 col-xl-4">
@@ -113,12 +116,12 @@ const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, s
   
       {/* End .col */}
 
-      <div className="col-xl-12">
+      {/* <div className="col-xl-12">
         <div className="my_profile_setting_input">
           <button className="btn btn1 float-start">Back</button>
           <button className="btn btn2 float-end">Next</button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
