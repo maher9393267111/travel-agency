@@ -28,17 +28,26 @@ const index = () => {
 
 useEffect(() => {
 
+
+  if (user !== null) {
+    replace('/admin')
+ 
+ }
+
+
+
+
   setTimeout(() => {
     console.log("Delayed for 13second.");
 
-    if (user !== null) {
-       replace('/')
+    // if (user !== null) {
+    //    replace('/')
     
-    }
+    // }
 
 
 
-  }, 1000)
+  }, 3000)
 
 
 })
