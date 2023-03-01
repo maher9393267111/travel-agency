@@ -1,4 +1,4 @@
-import { storage } from '@/firebase'
+import { storage } from './index'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage'
 
 const uploadFile = (file, filePath) => {

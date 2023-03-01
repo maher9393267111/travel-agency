@@ -6,10 +6,99 @@ import DetailedInfo from "./DetailedInfo";
 import FloorPlans from "./FloorPlans";
 import LocationField from "./LocationField";
 import PropertyMediaUploader from "./PropertyMediaUploader";
+import { toast } from "react-toastify";
+
+import { StateContext } from "../../../context/index";
+import { db , storage } from "../../../firebase";
+import {
+  getStorage,
+  ref as storageRef,
+  uploadBytes,
+  getDownloadURL,
+} from "firebase/storage";
+import { addDoc, collection } from "firebase/firestore";
+import moment from "moment/moment";
+import { useRouter } from "next/router";
+import { useContext, useState } from "react";
+import Loader from '../../login/loader'
+import { createGlobalStyle } from "styled-components";
+
 
 const index = () => {
+
+
+  const { setAlert, user, pageLoading = true } = useContext(StateContext)
+  const [value, setValue] = useState("");
+  const [title, setTitle] = useState("");
+  const [images, setImages] = useState([])
+  const [loading, setLoading] = useState(false)
+  const { replace } = useRouter()
+  const handleClick = async () => {
+    setLoading(true)
+    try {
+
+      console.log('images length: ' + images.length ,images)
+
+      const firebaseImages = [];
+      await Promise.all(
+        images.map(async (image) => {
+          const fbStorageRef = storageRef(storage, `images/${image.name}`);
+          const uploadTask = await uploadBytes(fbStorageRef, image);
+          const downloadURL = await getDownloadURL(uploadTask.ref);
+          firebaseImages.push(downloadURL);
+          toast.success(`Images successfully`)
+        })
+      );
+
+
+
+ 
+
+      if (title !== '' && value !== '' && images.length !==0 ) {
+
+
+      await addDoc(collection(db, 'blog'), {
+        title,
+        description: value,
+        image: firebaseImages,
+        date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss")
+      })
+      setTitle("")
+      setImages([])
+      setValue("")
+      toast.success("Blog created");
+    }
+
+else {
+
+  toast.error('All field must not be Impty')
+
+}
+
+
+
+    } catch (error) {
+      toast.error({massage:"Blog created"});
+
+    }
+    setLoading(false)
+  }
+
+
+
+
+//-----------------------------
+
+
+
+
+
+
+
   return (
     <>
+
+{loading && <Loader />}
       {/* <!-- Main Header Nav --> */}
       <Header />
 
@@ -53,7 +142,7 @@ const index = () => {
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Add New Property</h2>
+                    <h2 className="breadcrumb_title">Add New Blog</h2>
                     <p>We are glad to see you again!</p>
                   </div>
                 </div>
@@ -63,13 +152,16 @@ const index = () => {
                   <div className="my_dashboard_review">
                     <div className="row">
                       <div className="col-lg-12">
-                        <h3 className="mb30">Create Listing</h3>
+                        <h3 className="mb30">Create Blog</h3>
                       </div>
 
-                      <CreateList />
+                      <CreateList
+                      {...{ setTitle, title, value, setValue, handleClick, setImages, setAlert, setLoading, images }}
+                      
+                      />
                     </div>
                   </div>
-                  <div className="my_dashboard_review mt30">
+                  {/* <div className="my_dashboard_review mt30">
                     <div className="row">
                       <div className="col-lg-12">
                         <h3 className="mb30">Location</h3>
@@ -77,26 +169,29 @@ const index = () => {
 
                       <LocationField />
                     </div>
-                  </div>
-                  <div className="my_dashboard_review mt30">
+                  </div> */}
+                  {/* <div className="my_dashboard_review mt30">
                     <div className="col-lg-12">
                       <h3 className="mb30">Detailed Information</h3>
                     </div>
                     <DetailedInfo />
-                  </div>
+                  </div> */}
                   <div className="my_dashboard_review mt30">
                     <div className="col-lg-12">
                       <h3 className="mb30">Property media</h3>
                     </div>
-                    <PropertyMediaUploader />
+                    <PropertyMediaUploader
+                    
+                    {...{handleClick, setImages, setAlert, setLoading, images }}
+                    />
                   </div>
-                  <div className="my_dashboard_review mt30">
+                  {/* <div className="my_dashboard_review mt30">
                     <div className="col-lg-12">
                       <h3 className="mb30">Floor Plans</h3>
                       <button className="btn admore_btn mb30">Add More</button>
                     </div>
                     <FloorPlans />
-                  </div>
+                  </div> */}
                 </div>
                 {/* End .col */}
               </div>

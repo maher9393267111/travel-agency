@@ -319,8 +319,8 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid mt20"
-                src=  '/assets/images/service-imgs/logoproject.jpeg'
-                // src="/assets/images/ogle-color-logo.png"
+                // src=  '/assets/images/service-imgs/logoproject.jpeg'
+                 src="/assets/images/ogle-color-logo.png"
                 alt="header-logo.png"
               />
               <span className="brand-text">FindHouse</span>
@@ -411,53 +411,7 @@ const MobileMenuContent = () => {
           </SubMenu>
           {/* End Pages Listing */}
 
-          <SubMenu
-            title="Property"
-            className={
-              property.some((parent) => {
-                return parent.items.some(
-                  (page) =>
-                    page.routerPath === route.pathname ||
-                    page.routerPath + "/[id]" === route.pathname
-                );
-              })
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {property.map((item) => (
-              <SubMenu
-                title={item.title}
-                className={
-                  item.items.some(
-                    (page) =>
-                      page.routerPath === route.pathname ||
-                      page.routerPath + "/[id]" === route.pathname
-                  )
-                    ? "ui-active plus alt"
-                    : "plus alt"
-                }
-                key={item.id}
-              >
-                {item.items.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link href={val.routerPath}>
-                      <a
-                        className={
-                          route.pathname === val.routerPath ||
-                          val.routerPath + "/[id]" === route.pathname
-                            ? "ui-active"
-                            : undefined
-                        }
-                      >
-                        {val.name}
-                      </a>
-                    </Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-            ))}
-          </SubMenu>
+       
           {/* End Pages Property */}
 
           <SubMenu
@@ -491,43 +445,10 @@ const MobileMenuContent = () => {
           </SubMenu>
           {/* End pages Blog */}
 
-          <SubMenu
-            title="Pages"
-            className={
-              pages.some((page) => page.routerPath === route.pathname)
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {pages.map((val, i) => (
-              <MenuItem key={i}>
-                <Link href={val.routerPath}>
-                  <a
-                    className={
-                      route.pathname === val.routerPath
-                        ? "ui-active"
-                        : undefined
-                    }
-                  >
-                    {val.name}
-                  </a>
-                </Link>
-              </MenuItem>
-            ))}
-          </SubMenu>
+      
           {/* End pages Pages */}
 
-          <MenuItem>
-            <Link href="/contact">
-              <a
-                className={
-                  route.pathname === "/contact" ? "ui-active" : undefined
-                }
-              >
-                Contact
-              </a>
-            </Link>
-          </MenuItem>
+     
 
           <MenuItem>
             <Link href="/login">

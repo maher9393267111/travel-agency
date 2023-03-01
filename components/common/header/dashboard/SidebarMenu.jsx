@@ -40,8 +40,8 @@ const SidebarMenu = () => {
           <Link href="/">
             <a>
               <img
-                // src="/assets/images/ogle-color-logo.png"
-                src=  '/assets/images/service-imgs/logoproject.jpeg'
+                 src="/assets/images/ogle-color-logo.png"
+                // src=  '/assets/images/service-imgs/logoproject.jpeg'
                 alt="header-logo2.png"
               />
               <span>FindHouse</span>
@@ -69,137 +69,45 @@ const SidebarMenu = () => {
             </li>
             <li
               className={`treeview ${
-                isSinglePageActive("/create-listing", route.pathname)
+                isSinglePageActive("admin", route.pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/create-listing">
+              <Link href="/create-blog">
                 <a>
                   <i className="flaticon-plus"></i>
-                  <span> Create Listing</span>
-                </a>
+                  <span> Create Blog </span>
+                  </a>
               </Link>
             </li>
+          
+
             <li
               className={`treeview ${
-                isSinglePageActive("/my-message", route.pathname)
+                isSinglePageActive("/admin/allBlogs", route.pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-message">
+              <Link href="admin/all-blogs">
                 <a>
-                  <i className="flaticon-envelope"></i>
-                  <span> Message</span>
-                </a>
+                  <i className="flaticon-plus"></i>
+                  <span> All Blogs </span>
+                  </a>
               </Link>
             </li>
+
+
+
           </ul>
         </li>
         {/* End Main */}
 
-        <li className="title">
-          <span>Manage Listings</span>
-          <ul>
-            <li
-              className={`treeview ${
-                isParentPageActive(myProperties, route.pathname) ? "active" : ""
-              }`}
-            >
-              <a data-bs-toggle="collapse" href="#my-property">
-                <i className="flaticon-home"></i> <span>My Properties</span>
-                <i className="fa fa-angle-down pull-right"></i>
-              </a>
-              <ul className="treeview-menu collapse" id="my-property">
-                {myProperties.map((item) => (
-                  <li key={item.id}>
-                    <Link href={item.route}>
-                      <a>
-                        <i className="fa fa-circle"></i> {item.name}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            {/* end properties */}
-
-            <li
-              className={`treeview ${
-                isParentPageActive(reviews, route.pathname) ? "active" : ""
-              }`}
-            >
-              <a data-bs-toggle="collapse" href="#review">
-                <i className="flaticon-chat"></i>
-                <span>Reviews</span>
-                <i className="fa fa-angle-down pull-right"></i>
-              </a>
-              <ul className="treeview-menu collapse" id="review">
-                {reviews.map((item) => (
-                  <li key={item.id}>
-                    <Link href={item.route}>
-                      <a>
-                        <i className="fa fa-circle"></i> {item.name}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            {/* End Review */}
-
-            <li
-              className={`treeview ${
-                isSinglePageActive("/my-favourites", route.pathname)
-                  ? "active"
-                  : ""
-              }`}
-            >
-              <Link href="/my-favourites">
-                <a>
-                  <i className="flaticon-magnifying-glass"></i>
-                  <span> My Favorites</span>
-                </a>
-              </Link>
-            </li>
-            <li
-              className={`treeview ${
-                isSinglePageActive("/my-saved-search", route.pathname)
-                  ? "active"
-                  : ""
-              }`}
-            >
-              <Link href="/my-saved-search">
-                <a>
-                  <i className="flaticon-magnifying-glass"></i>
-                  <span> Saved Search</span>
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </li>
+      
         {/* End manage listing */}
 
-        <li className="title">
-          <span>Manage Account</span>
-          <ul>
-            {manageAccount.map((item) => (
-              <li
-                className={
-                  isSinglePageActive(item.route, route.pathname) ? "active" : ""
-                }
-                key={item.id}
-              >
-                <Link href={item.route}>
-                  <a>
-                    <i className={item.icon}></i> <span>{item.name}</span>
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </li>
+      
       </ul>
     </>
   );

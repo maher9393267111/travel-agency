@@ -5,6 +5,9 @@ import Seo from "../components/common/seo";
 import '../public/assets/scss/components/index.scss'
 import "../styles/globals.css";
 import { StateContextProvider } from "../context/index";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -24,6 +27,18 @@ function MyApp({ Component, pageProps }) {
       </Provider>
 
       <ScrollToTop />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       </StateContextProvider>
     </>
   );

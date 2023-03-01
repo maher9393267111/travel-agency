@@ -1,22 +1,51 @@
-const CreateList = () => {
+
+import { async } from '@firebase/util'
+import dynamic from 'next/dynamic'
+import { useState } from 'react'
+import 'react-quill/dist/quill.snow.css'
+import Loader from '../../login/loader'
+const QuillNoSSRWrapper = dynamic(import('react-quill'), {
+    ssr: false,
+    loading: () => <Loader />,
+})
+
+
+const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, setLoading }) => {
+
+
+
+
+
+
   return (
     <>
       <div className="col-lg-12">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="propertyTitle">Property Title</label>
-          <input type="text" className="form-control" id="propertyTitle" />
+          <label htmlFor="propertyTitle">Blog Title</label>
+          <input
+             value={title}
+             onChange={(e) => setTitle(e.target.value)}
+          
+          type="text" className="form-control" id="propertyTitle" />
         </div>
       </div>
       {/* End .col */}
 
       <div className="col-lg-12">
         <div className="my_profile_setting_textarea">
-          <label htmlFor="propertyDescription">Description</label>
+
+        <div className="w-full h-64">
+                <QuillNoSSRWrapper theme="snow" className='h-full pb-[2.5rem] border-[2.5px] text-black font-medium rounded-md border-teal-400 hover:border-blue-600' value={value} onChange={setValue} />
+            </div>
+
+
+
+          {/* <label htmlFor="propertyDescription">Description</label>
           <textarea
             className="form-control"
             id="propertyDescription"
             rows="7"
-          ></textarea>
+          ></textarea> */}
         </div>
       </div>
       {/* End .col */}
@@ -81,23 +110,7 @@ const CreateList = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Rooms</label>
-          <select
-            className="selectpicker form-select"
-            data-live-search="true"
-            data-width="100%"
-          >
-            <option data-tokens="Status1">1</option>
-            <option data-tokens="Status2">2</option>
-            <option data-tokens="Status3">3</option>
-            <option data-tokens="Status4">4</option>
-            <option data-tokens="Status5">5</option>
-            <option data-tokens="Status6">Other</option>
-          </select>
-        </div>
-      </div>
+  
       {/* End .col */}
 
       <div className="col-xl-12">
