@@ -45,7 +45,7 @@ const index = () => {
           const fbStorageRef = storageRef(storage, `images/${image.name}`);
           const uploadTask = await uploadBytes(fbStorageRef, image);
           const downloadURL = await getDownloadURL(uploadTask.ref);
-          firebaseImages.push(downloadURL);
+          firebaseImages.push({url:downloadURL , name:image.name});
           toast.success(`Images successfully`)
         })
       );

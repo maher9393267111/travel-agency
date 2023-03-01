@@ -1,7 +1,8 @@
-import { auth , db } from "../firebase";
+import { auth , db  , storage} from "../firebase";
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { deleteDoc, getDocs , doc } from "@firebase/firestore";
+import { ref, deleteObject } from "firebase/storage";
 import { toast } from "react-toastify";
 export const StateContext = createContext()
 
@@ -43,6 +44,19 @@ export const StateContextProvider = ({ children }) => {
       console.log('blog object CLICKEDDDDD' , blog)
     
       await deleteDoc(doc(db, "blog", blog.id));
+
+
+
+      blog.image.forEach(async(img) => {
+        console.log('image is Name:🔷️🔶️🔷️🔶️ ' + img)
+
+        const desertRef = ref(storage, `images/${img?.name}`);
+        await deleteObject(desertRef);
+        toast.success('Blog images Deleted  successfully')
+      });
+
+   
+
       console.log("Document successfully deleted!");
       toast.success('Blog deleted successfully')
       window.location.reload
@@ -55,6 +69,31 @@ export const StateContextProvider = ({ children }) => {
     }
     
   };
+
+
+
+//   const UseDeleteImg = async (photos) => {
+    
+
+//     try {
+//         await deleteDoc(doc(projectFirestore, "images", photo.id));
+
+//         const desertRef = ref(storage, `images/${photo.name}`);
+//         await deleteObject(desertRef);
+
+//         setLoading(true)
+//         console.log("deleted")
+//     } catch (error) {
+//         console.log(error);
+//         setsuccess(false)
+//     }
+    
+
+
+   
+// }
+
+
 
 
 

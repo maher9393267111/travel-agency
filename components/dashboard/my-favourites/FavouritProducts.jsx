@@ -93,7 +93,7 @@ const FavouritProducts = ({blogs}) => {
   let Blogscontent = blogs?.length > 0 ? blogs?.map((item) => (
     <div className="feat_property list favorite_page" key={item.id}>
       <div className="thumb">
-        <img className="img-whp cover" src={item.image[0]} alt="fp1.jpg" />
+        <img className="img-whp cover" src={item.image[0]?.url} alt="fp1.jpg" />
         <div className="thmb_cntnt">
           <ul className="tag mb0">
             <li className="list-inline-item">
