@@ -64,6 +64,7 @@ const CreateList = ({setTitle, title, value, setValue, handleClick,  setAlert, s
             <option value='uzbakistan'  data-tokens="Type3">Uzbakistan</option>
             <option  value ="emirates" data-tokens="Type4">Emirates</option>
             <option value='kirgistan'  data-tokens="Type5">kirgistan</option>
+            <option value='serbia'  data-tokens="Type5">Serbia</option>
           </select>
         </div>
       </div>

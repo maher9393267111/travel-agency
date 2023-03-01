@@ -90,7 +90,7 @@ const parseHtml = (desc) => {
                   <img className="img-whp  w-[365px]  h-[450px]" src={item.image[0]?.url} alt={'blog'} />
                 </a>
               </Link>
-              <div className="blog_tag">Tourism</div>
+              <div className="blog_tag">{item?.country}</div>
             </div>
            
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Slider from "react-slick";
 import properties from "../../data/properties";
+import { featuresData } from "../../data/features";
 
 const FeaturedProperties = () => {
   const settings = {
@@ -38,18 +39,22 @@ const FeaturedProperties = () => {
   return (
     <>
       <Slider {...settings} arrows={true}>
-        {properties.slice(0, 12).map((item) => (
+  
+      {featuresData.slice(0, 12).map((item) => (
           <div className="item" key={item.id}>
             <div className="feat_property home3">
               <div className="thumb">
                 <img className="img-whp" src={item.img} alt="fp1.jpg" />
                 <div className="thmb_cntnt">
                   <ul className="tag mb0">
-                    {item.saleTag.map((val, i) => (
-                      <li className="list-inline-item" key={i}>
-                        <a href="#">{val}</a>
+                    {/* {item.saleTag.map((val, i) => ( */}
+
+                      <li className="list-inline-item">
+                        <a href="#">{item?.featurecorner}</a>
                       </li>
-                    ))}
+
+
+                     {/* ))} */}
                   </ul>
 
                   <ul className="icon mb0">
@@ -100,7 +105,12 @@ const FeaturedProperties = () => {
               </div>
             </div>
           </div>
-        ))}
+        ))} 
+
+
+
+
+
       </Slider>
     </>
   );
