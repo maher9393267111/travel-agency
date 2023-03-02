@@ -282,7 +282,7 @@ items:[
          
             name: "عروض سياحيه وجولات فقط",
             routerPath: `/country/?country=3&service=tourismTours`,
-            mainImage:"/assets/images/service-imgs/azerbicam-banner.jpeg",
+            mainImage:"/assets/images/service-imgs/azerbican-banner.jpeg",
             images:[],
             query:'tourismTours',
             desc:'',
