@@ -138,16 +138,19 @@ const handleRemoveImage = (image) => {
 
       <div className="col-xl-12">
         <div className="my_profile_setting_input">
-          <button
+          {/* <button
           type = "submit"
           onClick={uploadImage}
           
-          className="btn btn1 float-start">Upload Images</button>
+          className="btn btn1 float-start">Upload Images</button> */}
+
+
+
           <button
           type = "submit"
           onClick={handleClick}
           
-          className="btn btn2 float-end">Create Blog</button>
+          className="btn btn2  m-auto block">Create Blog</button>
         </div>
       </div>
       {/* End .col */}
