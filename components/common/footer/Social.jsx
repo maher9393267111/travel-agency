@@ -6,7 +6,8 @@ const Social = () => {
     { id: 4, liveLink: "https://t.me/+XN7GOjUDRkdjMjEO", icon: "fa fa-telegram" },
     
     { id: 6, liveLink: "https://wa.me//905385073947", icon: "fa fa-whatsapp" },
-    { id: 7, liveLink: "https://chat.whatsapp.com/EfjRs1GVLUO6TJjgq3Rdlr", icon: ""  , isGroup: true },
+    { id: 7, liveLink: "https://chat.whatsapp.com/EfjRs1GVLUO6TJjgq3Rdlr", icon: "fa-solid fa-people-line"  , isGroup: true },
+    
     
   ];
   return (
@@ -17,7 +18,7 @@ const Social = () => {
           className=" flex  flex-column items-center "
           href={item.liveLink} target="_blank" rel="noopener noreferrer">
         {item?.icon !== '' &&     <i className={item.icon}></i>}
-            {item?.isGroup === true && <span className=" text-sm">Group Chat</span>}
+            {/* {item?.isGroup === true && <span className=" text-sm">Group Chat</span>} */}
           </a>
         </li>
       ))}

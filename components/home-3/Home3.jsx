@@ -75,7 +75,7 @@ const Home3 = () => {
               <h2
               className="m-auto w-1/4  text-2xl p-2 rounded-md text-white bg-red-500"
               >خدمات مميزة</h2>
-              <i class="fa-solid fa-people-line"></i>
+             
               {/* <p>
                 Handpicked properties by our team.{" "}
                 <a className="float-end" href="#">
