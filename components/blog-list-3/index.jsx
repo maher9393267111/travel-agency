@@ -6,6 +6,7 @@ import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
+import SearchMap from './searchMap'
 
 const index = ({data}) => {
   return (
@@ -18,6 +19,11 @@ const index = ({data}) => {
 
       {/* <!-- Modal --> */}
       <PopupSignInUp />
+
+
+{/* -----Map   ---- */}
+
+<SearchMap/>
 
       {/* <!-- Main Blog Post Content --> */}
       <section className="blog_post_container bgc-f7">

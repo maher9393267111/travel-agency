@@ -5,6 +5,7 @@ import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { find, findIndex, remove, sortBy ,orderBy } from "lodash";
 import moment from "moment/moment";
+import { checkGridRowIdIsValid } from "@mui/x-data-grid";
 
 const BlogsPage = ({data}) => {
   return (
@@ -48,8 +49,11 @@ export default  BlogsPage;
 
 
 
-BlogsPage.getInitialProps = async (context) => {
+BlogsPage.getInitialProps = async (context  ) => {
+  
+  console.log('Query', context?.query?.country)
   const datais = [];
+
 
   try {
     const querySnapshot = await getDocs(collection(db, 'blog'));
@@ -66,10 +70,31 @@ BlogsPage.getInitialProps = async (context) => {
     console.error(error);
   }
 
+ 
+
+
+const filterdata=(data)=>{
+
+
+  let filterQuery =[]
+
+  if ( context?.query?.country) {
+   
+  const filter = datais.filter(doc => doc?.country === context?.query?.country)
+  //console.log('FILTER', filter)
+   filterQuery = filter
+   //console.log('FILTER', filterQuery)
+  return filterQuery
+  }
+  
+  
+
+}
+
 
 
   return {
-    data: datais,
+    data:filterdata(datais),
   };
 };
 

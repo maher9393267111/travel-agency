@@ -29,7 +29,7 @@ console.log('country--->' , selected , country)
     <div className="  pb-12  mb-12 mt-12  m-auto h-[200px]  md:h-[400px] w-[80%]  ">
   
     <ComposableMap
-    className=' h-[200px] mt-12 md:h-[400px] w-100 border-green-400 border-2'
+    className=' h-[200px] mt-12 md:h-[400px] bg-red-300 w-100 border-green-400 border-2'
       projection="geoAlbers"
       projectionConfig={{
         scale: 400
