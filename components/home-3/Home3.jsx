@@ -106,7 +106,7 @@ const Home3 = () => {
 
 
       {/* <!-- Property Search --> */}
-      <section id="property-search" className="property-search bg-img4 mx-12">
+      {/* <section id="property-search" className="property-search bg-img4 mx-12">
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div className="search_smart_property text-center">
@@ -119,7 +119,7 @@ const Home3 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Property Cities --> */}
       {/* <section id="best-property" className="best-property pt100 pb0">
