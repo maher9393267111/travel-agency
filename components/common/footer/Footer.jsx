@@ -18,7 +18,7 @@ Enjoy the Journey ,Not The destination
           </p>
 
           <div>
-          <img class="  w-24 h-24 rounded-xl my-2" src="/assets/images/service-imgs/logoproject.jpeg" alt="header-logo2.png"/>
+          <img class="  w-24 h-24 rounded-xl my-2 object-cover" src="/assets/images/service-imgs/logoproject.jpeg" alt="header-logo2.png"/>
           </div>
 
           </div>

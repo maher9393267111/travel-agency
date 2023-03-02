@@ -166,8 +166,16 @@ const Home3 = () => {
       </section> */}
 
       {/* <!-- Our Footer --> */}
-      <section className="footer_one home3 ml-24">
+      {/* <section className="footer_one home3 ml-24">
         <div className="container-fluid">
+          <div className="row">
+            <Footer />
+          </div>
+        </div>
+      </section> */}
+
+<section className="footer_one">
+        <div className="container">
           <div className="row">
             <Footer />
           </div>
