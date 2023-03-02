@@ -61,7 +61,7 @@ Enjoy the Journey ,Not The destination
           <h4>Contact Us</h4>
           <ul className="list-unstyled">
             <li>
-              <a href="mailto:info@Patagonia.com">info@Patagonia.com</a>
+              <a href="mailto:info@Patagonia.com">https://ptgtourism.com</a>
             </li>
             <li>
               <a href="#">Turkey , Istanbul</a>

@@ -3,14 +3,14 @@ export const countries =[
     {
 id:1,
 title:'السعودية',
-image:'/assets/images/service-imgs/saudisec.jpg',
+image:'/assets/images/service-imgs/saudi-banner.jpeg',
 
 items:[
 
     {
         name: "تأشيرات السعوديه جميع انواعها",
         routerPath: "/country/?country=1&service=visa",
-        mainImage:"",
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'visa',
         desc:'',
@@ -21,7 +21,7 @@ items:[
       {
         name: "برامج العمره",
         routerPath: "/country/?country=1&service=omraProgramm",
-        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'omraProgramm',
         desc:'',
@@ -33,7 +33,7 @@ items:[
       {
         name: "برامج الحج",
         routerPath: "/country/?country=1&service=hajProgramm",
-        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'hajProgramm',
         desc:'',
@@ -43,7 +43,7 @@ items:[
       {
         name: "سياحه الهجرة النبويه",
         routerPath: "/country/?country=1&service=nabawiTurism",
-        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'nabawiTurism',
         desc:'',
@@ -54,7 +54,7 @@ items:[
       {
         name: "حجز فنادق",
         routerPath: "/country/?country=1&service=hotelsFind",
-        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'hotelsFind',
         desc:'',
@@ -65,7 +65,7 @@ items:[
       {
         name: "حجز مواصلات",
         routerPath: "/country/?country=1&service=carsReservation",
-        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'carsReservation',
         desc:'',
@@ -76,7 +76,7 @@ items:[
       {
         name: "تأجير سيارات",
         routerPath: "/country/?country=1&service=carsRental",
-        mainImage:'https://www.thestatesman.com/wp-content/uploads/2021/12/iStock-149121279.jpg',
+        mainImage:"/assets/images/service-imgs/saudi-banner.jpeg",
         images:[],
         query:'carsRental',
         desc:'',
@@ -100,7 +100,7 @@ items:[
 {
     id:2,
     title:'تركيا',
-    image: '/assets/images/service-imgs/turkeysec.png',
+    image: '/assets/images/service-imgs/turkey-banner.jpeg',
     
     items:[
     
@@ -108,7 +108,7 @@ items:[
 
             name: "حجز فنادق",
             routerPath: "/country/?country=2&service=hotelsReservation",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'hotelsReservation',
             desc:'',
@@ -119,7 +119,7 @@ items:[
           {
             name: "حجز شقق مفروشه",
             routerPath: "/country/?country=2&service=homesReservation",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'homesReservation',
             desc:'',
@@ -131,7 +131,7 @@ items:[
           {
             name: "حجز فيلا وقصور مفروشه",
             routerPath: "/country/?country=2&service=villasReservation",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'villasReservation',
             desc:'',
@@ -142,7 +142,7 @@ items:[
            
             name: "حجز اكواخ",
             routerPath: "/country/?country=2&service=smallRoomsReservation",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'smallRoomsReservation',
             desc:'',
@@ -153,7 +153,7 @@ items:[
           {
             name: "حجز مزارع",
             routerPath: "/country/?country=2&service=farmsReservation",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'farmsReservation',
             desc:'',
@@ -165,7 +165,7 @@ items:[
           {
             name: "حجز كرفانات",
             routerPath: "/country/?country=2&service=caravanReservation",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'caravanReservation',
             desc:'',
@@ -176,7 +176,7 @@ items:[
           {
             name: "برامج سياحيه",
             routerPath: "/country/?country=2&service=tourismProgramms",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
       
             images:[],
             query:'tourismProgramms',
@@ -190,7 +190,7 @@ items:[
          
             name: "برامج السياحه العلاجيه",
             routerPath: "/country/?country=2&service=healthProgramms",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'healthProgramms',
             desc:'',
@@ -202,7 +202,7 @@ items:[
           {
             name: "برامج المعارض والمؤتمرات والدورات التكوينيه",
             routerPath: "/country/?country=2&service=referencesProgramms",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'referencesProgramms',
             desc:'',
@@ -215,7 +215,7 @@ items:[
          
             name: "برامج شهر العسل",
             routerPath: "/country/?country=2&service=weddingsProgramms",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'weddingsProgramms',
             desc:'',
@@ -230,7 +230,7 @@ items:[
             name: "تأجير مواصلات",
             routerPath: "/country/?country=2&service=carsReservation",
           
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'carsReservation',
             desc:'',
@@ -245,7 +245,7 @@ items:[
           
             name: "الوساطه التجاريه لتقديم خدمات رجال الاعمال",
             routerPath: "/country/?country=2&service=business",
-            mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
             query:'carsRental',
             desc:'',
@@ -274,7 +274,7 @@ items:[
 {
     id:3,
     title: "أذربيجان",
-    image:'https://yetimvakfi.org.tr/rsm/icerik/buyuk/azerbaycan_7251jpeg',
+    image:'/assets/images/service-imgs/azerbican-banner.jpeg',
     
     items:[
     
@@ -282,7 +282,7 @@ items:[
          
             name: "عروض سياحيه وجولات فقط",
             routerPath: `/country/?country=3&service=tourismTours`,
-            mainImage:"https://bakutravelpackages.com/wp-content/uploads/2021/02/Azerbaijan-Tourism-min-1024x540.jpg",
+            mainImage:"/assets/images/service-imgs/azerbicam-banner.jpeg",
             images:[],
             query:'tourismTours',
             desc:'',
@@ -302,7 +302,7 @@ items:[
         title: "الإمارات",
        
         
-        image:'https://e7.pngegg.com/pngimages/297/477/png-clipart-flag-of-the-united-arab-emirates-qadri-international-educational-consultancy-emirates-net-systems-llc-flags-of-the-world-flag-miscellaneous-flag-thumbnail.png',
+        image:'/assets/images/service-imgs/emirates-banner.jpeg',
         
         items:[
         
@@ -310,7 +310,7 @@ items:[
                 name: " تأشيرة السياحيه",
                 routerPath: "/country/?country=4&service=visa",
              
-                mainImage:"https://imagevars.gulfnews.com/2020/08/12/Stock-aerial-Dubai-skyline_173e34e77d0_large.jpg",
+                mainImage:"/assets/images/service-imgs/emirates-banner.jpeg",
                 images:[],
                 query:'visa',
                 desc:'',
@@ -324,7 +324,7 @@ items:[
                 name: " حجوزات الفنادق",
                 routerPath: "/country/?country=5&service=hotelsReservation",
              
-                mainImage:"https://imagevars.gulfnews.com/2020/08/12/Stock-aerial-Dubai-skyline_173e34e77d0_large.jpg",
+                mainImage:"/assets/images/service-imgs/emirates-banner.jpeg",
                 images:[],
                 query:'hotelsReservation',
                 desc:'',
@@ -337,7 +337,7 @@ items:[
                 name: "حجز مواصلات واستقبال",
                 routerPath: "/country/?country=5&service=carServices",
              
-                mainImage:"https://imagevars.gulfnews.com/2020/08/12/Stock-aerial-Dubai-skyline_173e34e77d0_large.jpg",
+                mainImage:"/assets/images/service-imgs/emirates-banner.jpeg",
                 images:[],
                 query:'carServices',
                 desc:'',
@@ -350,7 +350,7 @@ items:[
                 name: "برامج سياحيه عائليه",
           routerPath: "/country/?country=5&service=tourismProgramms",
              
-          mainImage:"https://imagevars.gulfnews.com/2020/08/12/Stock-aerial-Dubai-skyline_173e34e77d0_large.jpg",
+          mainImage:"/assets/images/service-imgs/emirates-banner.jpeg",
                 images:[],
                 query:'tourismProgramms',
                 desc:'',
@@ -363,7 +363,7 @@ items:[
               
                 name: "برامج المعارض والمؤتمرات والدورات التكوينيه",
                 routerPath: "/country/?country=5&service=references",
-                mainImage:"https://imagevars.gulfnews.com/2020/08/12/Stock-aerial-Dubai-skyline_173e34e77d0_large.jpg",
+                mainImage:"/assets/images/service-imgs/emirates-banner.jpeg",
                  images:[],
                 query:'references',
                 desc:'',
@@ -376,7 +376,7 @@ items:[
               
                 name: "الوساطه وخدمات رجال الاعمال وفتح شركات",
                 routerPath: "/country/?country=5&service=buisness",
-                mainImage:"https://imagevars.gulfnews.com/2020/08/12/Stock-aerial-Dubai-skyline_173e34e77d0_large.jpg",
+                mainImage:"/assets/images/service-imgs/emirates-banner.jpeg",
                 images:[],
                 query:'buisness',
                 desc:'',
@@ -406,14 +406,14 @@ items:[
     id: 5,
     title: "اوزبكستان ",
 
-    image:'https://www.gokbayraktekstil.com.tr/upload/cache/upload/ckfinder/files/urunler/devlet-ulke-bayraklari/ozbekistan-520x360.jpg',
+    image:'/assets/images/service-imgs/uzbakistan-banner.jpeg',
     
     items:[
     
         {
             name: "تأشيرات سياحيه",
             routerPath: "/country/?country=5&service=visa",
-            mainImage:"https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/25/154544.jpg",
+            mainImage:"/assets/images/service-imgs/uzbakistan-banner.jpeg",
             images:[],
             query:'visa',
             desc:'',
@@ -426,7 +426,7 @@ items:[
             
             name: "برنامج عبق التاريخ السياحي",
             routerPath: "/country/?country=5&service=historyProgramm",
-            mainImage:"https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/25/154544.jpg",
+            mainImage:"/assets/images/service-imgs/uzbakistan-banner.jpeg",
             images:[],
             query:'historyProgramm',
             desc:'',
@@ -438,7 +438,7 @@ items:[
             name: "برامج سياحيه",
             routerPath: "/country/?country=5&service=tourismProgramms",
           
-            mainImage:"https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/25/154544.jpg",
+            mainImage:"/assets/images/service-imgs/uzbakistan-banner.jpeg",
             images:[],
             query:'tourismProgramms',
             desc:'',
@@ -449,7 +449,7 @@ items:[
           {
             name: "برنامج الاستجمام والاسباء",
             routerPath: "/country/?country=5&service=relaxing",
-            mainImage:"https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/25/154544.jpg",
+            mainImage:"/assets/images/service-imgs/uzbakistan-banner.jpeg",
             images:[],
             query:'relaxing',
             desc:'',
@@ -473,13 +473,13 @@ items:[
     id: 6,
     
     title: "قيرغيستان",
-    image:"https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg" ,
+    image:"/assets/images/service-imgs/kirgistan-banner.jpeg" ,
     items: [
       {
         name: " تأشيره قيرغيستان",
         
         routerPath: "/country/?country=6&service=visa",
-        mainImage:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/6a/e9/caption.jpg?w=500&h=300&s=1",
+        mainImage:"/assets/images/service-imgs/kirgistan-banner.jpeg",
         images:[],
         query:'visa',
         desc:'',
@@ -489,7 +489,7 @@ items:[
       {
         name: " برنامج استكشف 4x4",
         routerPath: "/country/?country=6&service=4xCars",
-        mainImage:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/6a/e9/caption.jpg?w=500&h=300&s=1",
+        mainImage:"/assets/images/service-imgs/kirgistan-banner.jpeg",
         images:[],
         query:'4xCars',
         desc:'',
