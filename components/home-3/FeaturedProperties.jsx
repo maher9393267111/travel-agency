@@ -19,20 +19,49 @@ const FeaturedProperties = () => {
           slidesToScroll: 3,
         },
       },
+      // {
+      //   breakpoint: 768,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 3,
+      //   },
+      // },
+      // {
+      //   breakpoint: 520,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 3,
+      //   },
+      // },
+
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
+
       {
-        breakpoint: 520,
+        breakpoint: 568,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+
+
+
+      {
+        breakpoint: 420,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
+
+
+
     ],
   };
 
