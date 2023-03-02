@@ -1,16 +1,13 @@
-import BlogSidebar from "../../components/common/blog/BlogSidebar";
+// import BlogSidebar from "../../components/common/blog/BlogSidebar";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import Footer from "../../components/common/footer/Footer";
 import Header from "../home-3/Header";
 import MobileMenu from "../../components/common/header/MobileMenu";
-import PopupSignInUp from "../../components/common/PopupSignInUp";
-import Social from "../common/footer/Social";
+
+
 import BreadCrumb2 from "./BreadCrumb2";
-import Comments from "./Comments";
-import Pagination from "./Pagination";
-import Ratings from "./Ratings";
-import RelatedPost from "./RelatedPost";
-import ReviewBox from "./ReviewBox";
+
+
 
 const index = ({data}) => {
 
@@ -44,7 +41,7 @@ const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
       <MobileMenu />
 
       {/* <!-- Modal --> */}
-      <PopupSignInUp />
+      {/* <PopupSignInUp /> */}
 
       {/* <!-- Main Blog Post Content --> */}
       <section className="blog_post_container bgc-f7">
