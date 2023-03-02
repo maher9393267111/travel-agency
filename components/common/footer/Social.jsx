@@ -1,10 +1,11 @@
 const Social = () => {
   const socialContent = [
-    { id: 1, liveLink: "https://www.facebook.com/", icon: "fa-facebook" },
-    { id: 2, liveLink: "https://www.twitter.com/", icon: "fa-twitter" },
-    { id: 3, liveLink: "https://www.instagram.com/", icon: "fa-instagram" },
-    { id: 4, liveLink: "https://www.pinterest.com/", icon: "fa-pinterest" },
-    { id: 5, liveLink: "https://www.dribbble.com/", icon: "fa-dribbble" },
+    { id: 1, liveLink: "https://www.facebook.com/Patagonia.tourism?mibextid=ZbWKwl", icon: "fa-facebook" },
+    // { id: 2, liveLink: "https://www.twitter.com/", icon: "fa-twitter" },
+    { id: 3, liveLink: "https://www.instagram.com/patagonia_tourism_industries?igshid=ZDdkNTZiNTM=", icon: "fa-instagram" },
+    { id: 4, liveLink: "https://t.me/+XN7GOjUDRkdjMjEO", icon: "fa-telegram" },
+    
+    { id: 6, liveLink: "https://wa.me//905385073947", icon: "fa-whatsapp" },
   ];
   return (
     <>

@@ -9618,6 +9618,13 @@ form.home5_advanced_search_form
 }
 
 /*== Footer Widget ==*/
+
+footer_about_widget{
+  margin-right: 100px !important;
+}
+
+
+
 .footer_about_widget p {
   font-size: 14px;
   font-family: "Nunito";

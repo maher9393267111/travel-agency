@@ -5,18 +5,24 @@ import SubscribeForm from "./SubscribeForm";
 const Footer = () => {
   return (
     <>
-      <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4 pr0 pl0 px-4">
         <div className="footer_about_widget">
-          <h4>About Site</h4>
+
+          <div className=" mr-12 mb-4">
+
+        
+          <h4> Patagonia</h4>
           <p>
-            We’re reimagining how you buy, sell and rent. It’s now easier to get
-            into a place you love. So let’s do this, together.
+         
+Enjoy the Journey ,Not The destination
           </p>
+
+          </div>
         </div>
       </div>
       {/* End .col */}
 
-      <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+      {/* <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
         <div className="footer_qlink_widget">
           <h4>Quick Links</h4>
           <ul className="list-unstyled">
@@ -47,10 +53,10 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       {/* End .col */}
 
-      <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <div className="footer_contact_widget">
           <h4>Contact Us</h4>
           <ul className="list-unstyled">
@@ -58,23 +64,23 @@ const Footer = () => {
               <a href="mailto:info@Patagonia.com">info@Patagonia.com</a>
             </li>
             <li>
-              <a href="#">Collins Street West, Victoria</a>
+              <a href="#">Turkey , Istanbul</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#">8007, Australia.</a>
-            </li>
+            </li> */}
             <li>
-              <a href="tel:+4733378901">+1 246-345-0699</a>
+              <a href="tel:+905385073947">+905385073947</a>
             </li>
-            <li>
+            {/* <li>
               <a href="tel:+4733378901">+1 246-345-0695</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
       {/* End .col */}
 
-      <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <div className="footer_social_widget">
           <h4>Follow us</h4>
           <ul className="mb30">
