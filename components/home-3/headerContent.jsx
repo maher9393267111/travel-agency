@@ -132,7 +132,17 @@ const HeaderMenuContentHome = ({ float = "" }) => {
                     : undefined
                 }
               >
-                {item.title}
+                <div className=" flex gap-2 items-center">
+                  <span className=" ">
+                  {item.title}
+                  </span>
+              
+                  <span><img className="w-6 h-6" src={item?.icon} alt={item?.name} /></span>
+                </div>
+           
+             
+               
+                
               </a>
               {/* <!-- Level Three--> */}
               <ul className="sub-menu ">
