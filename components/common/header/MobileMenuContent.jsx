@@ -374,13 +374,13 @@ const MobileMenuContent = () => {
         </Menu>
       </SidebarContent>
 
-      <SidebarFooter>
+      {/* <SidebarFooter>
         <Link href="/create-listing">
           <a className="btn btn-block btn-lg btn-thm circle">
             <span className="flaticon-plus"></span> Create Listing
           </a>
         </Link>
-      </SidebarFooter>
+      </SidebarFooter> */}
     </ProSidebar>
   );
 };
