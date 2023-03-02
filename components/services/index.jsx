@@ -20,7 +20,7 @@ const index = ({  filteredService}) => {
       <PopupSignInUp />
 
       {/* <!-- Inner Page Breadcrumb --> */}
-      <Banner title={  filteredService?.name}  mainImage={filteredService?.mainImage} />
+      <Banner country ={filteredService?.country} title={  filteredService?.name}  mainImage={filteredService?.mainImage} />
 
       {/* <!-- Our LogIn Register --> */}
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {listingCountries} from '../../data/countries'
+import { listingCountries } from '../../data/countries'
 import MyAccount from "../common/header/dashboard/MyAccount";
 
 
@@ -13,24 +13,24 @@ const HeaderMenuContentHome = ({ float = "" }) => {
       name: "الرئيسية",
       routerPath: "/",
     },
-  
+
   ];
 
- 
-
- 
 
 
 
 
 
 
- 
+
+
+
+
 
   const blog = [
     { id: 1, name: "المدونة ", routerPath: "/blogs" },
- 
-  
+
+
   ];
 
 
@@ -69,17 +69,17 @@ const HeaderMenuContentHome = ({ float = "" }) => {
 
 
         <li className={` `}>
-        <Link href={'/'}>
-        <a
-          href="#"
-          className=""
-        //   data-bs-toggle="modal"
-        //   data-bs-target=".bd-example-modal-lg"
-        >
-          <span className="dn-lg" >  الرئيسية</span>
-        </a>
-        </Link>
-      </li>
+          <Link href={'/'}>
+            <a
+              href="#"
+              className=""
+            //   data-bs-toggle="modal"
+            //   data-bs-target=".bd-example-modal-lg"
+            >
+              <span className="dn-lg" >  الرئيسية</span>
+            </a>
+          </Link>
+        </li>
 
 
 
@@ -102,8 +102,8 @@ const HeaderMenuContentHome = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-   
-    
+
+
       <li className="dropitem">
         <a
           href="#"
@@ -184,7 +184,7 @@ const HeaderMenuContentHome = ({ float = "" }) => {
                 <a
                   className={
                     route.pathname === item.routerPath ||
-                    item.routerPath + "/[id]" === route.pathname
+                      item.routerPath + "/[id]" === route.pathname
                       ? "ui-active"
                       : undefined
                   }
@@ -198,10 +198,6 @@ const HeaderMenuContentHome = ({ float = "" }) => {
       </li>
 
 
-    
-
-
-    
 
 
 
@@ -210,45 +206,49 @@ const HeaderMenuContentHome = ({ float = "" }) => {
 
 
 
-{!route.pathname.startsWith("/admin") &&
-    
-
-      <li className={`list-inline-item list_s ${float}`}>
-        <Link href={'/login'}>
-        <a
-          href="#"
-          className="btn flaticon-user"
-        //   data-bs-toggle="modal"
-        //   data-bs-target=".bd-example-modal-lg"
-        >
-          <span className="dn-lg">Login</span>
-        </a>
-        </Link>
-      </li>
-
-                }
-   
 
 
-{route.pathname.startsWith('/admin') &&
 
-      <li className="user_setting">
-        <div className="dropdown">
-          <a className="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            <img
-              className="rounded-circle"
-              src="/assets/images/team/e1.png"
-              alt="e1.png"
-            />
-            <span className="dn-1199 ms-1">ADMIN</span>
-          </a>
-          <div className="dropdown-menu">
-            <MyAccount />
+
+      {!route.pathname.startsWith("/admin") &&
+
+
+        <li className={`list-inline-item list_s ${float}`}>
+          <Link href={'/login'}>
+            <a
+              href="#"
+              className="btn flaticon-user"
+            //   data-bs-toggle="modal"
+            //   data-bs-target=".bd-example-modal-lg"
+            >
+              <span className="dn-lg">تسجيل دخول</span>
+            </a>
+          </Link>
+        </li>
+
+      }
+
+
+
+      {route.pathname.startsWith('/admin') &&
+
+        <li className="user_setting">
+          <div className="dropdown">
+            <a className="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <img
+                className="rounded-circle"
+                src="/assets/images/team/e1.png"
+                alt="e1.png"
+              />
+              <span className="dn-1199 ms-1">ADMIN</span>
+            </a>
+            <div className="dropdown-menu">
+              <MyAccount />
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
 
-                }
+      }
 
 
 

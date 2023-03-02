@@ -15,6 +15,7 @@ items:[
         query:'visa',
         desc:'',
         subdesc:'',
+        country:'saudi '
       }, 
 
       {
@@ -25,6 +26,7 @@ items:[
         query:'omraProgramm',
         desc:'',
         subdesc:'',
+        country:'saudi '
       },
 
 
@@ -36,6 +38,7 @@ items:[
         query:'hajProgramm',
         desc:'',
         subdesc:'',
+        country:'saudi '
       },
       {
         name: "سياحه الهجرة النبويه",
@@ -45,6 +48,7 @@ items:[
         query:'nabawiTurism',
         desc:'',
         subdesc:'',
+        country:'saudi '
       },
     
       {
@@ -55,6 +59,7 @@ items:[
         query:'hotelsFind',
         desc:'',
         subdesc:'',
+        country:'saudi '
       },
 
       {
@@ -65,6 +70,7 @@ items:[
         query:'carsReservation',
         desc:'',
         subdesc:'',
+        country:'saudi '
       },
 
       {
@@ -75,6 +81,7 @@ items:[
         query:'carsRental',
         desc:'',
         subdesc:'',
+        country:'saudi '
       },
 
 
@@ -98,6 +105,7 @@ items:[
     items:[
     
         {
+
             name: "حجز فنادق",
             routerPath: "/country/?country=2&service=hotelsReservation",
             mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
@@ -105,6 +113,7 @@ items:[
             query:'hotelsReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
           }, 
     
           {
@@ -112,9 +121,10 @@ items:[
             routerPath: "/country/?country=2&service=homesReservation",
             mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
             images:[],
-            query:'homesReservation"',
+            query:'homesReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
     
@@ -126,6 +136,7 @@ items:[
             query:'villasReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
           {
            
@@ -136,6 +147,7 @@ items:[
             query:'smallRoomsReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
         
           {
@@ -146,6 +158,8 @@ items:[
             query:'farmsReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
+
           },
     
           {
@@ -156,6 +170,7 @@ items:[
             query:'caravanReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
           {
@@ -164,9 +179,10 @@ items:[
             mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
       
             images:[],
-            query:'tourismProgramm',
+            query:'tourismProgramms',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
 
 
@@ -179,6 +195,7 @@ items:[
             query:'healthProgramms',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
 
@@ -190,6 +207,7 @@ items:[
             query:'referencesProgramms',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
 
@@ -202,6 +220,7 @@ items:[
             query:'weddingsProgramms',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
 
@@ -216,6 +235,7 @@ items:[
             query:'carsReservation',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
 
@@ -227,9 +247,10 @@ items:[
             routerPath: "/country/?country=2&service=business",
             mainImage:"https://www.planetware.com/wpimages/2019/01/turkey-top-attractions-antalya.jpg",
             images:[],
-            query:'business',
+            query:'carsRental',
             desc:'',
             subdesc:'',
+            country:'turkey'
           },
     
 
@@ -266,6 +287,7 @@ items:[
             query:'tourismTours',
             desc:'',
             subdesc:'',
+            country:'azerbican'
           }, 
 
         ]
@@ -292,6 +314,7 @@ items:[
                 query:'visa',
                 desc:'',
                 subdesc:'',
+                country:'emirates'
               }, 
     
 
@@ -305,6 +328,7 @@ items:[
                 query:'hotelsReservation',
                 desc:'',
                 subdesc:'',
+                country:'emirates'
               }, 
     
 
@@ -317,6 +341,7 @@ items:[
                 query:'carServices',
                 desc:'',
                 subdesc:'',
+                country:'emirates'
               }, 
     
 
@@ -329,6 +354,7 @@ items:[
                 query:'tourismProgramms',
                 desc:'',
                 subdesc:'',
+                country:'emirates'
               }, 
     
 
@@ -341,6 +367,7 @@ items:[
                 query:'references',
                 desc:'',
                 subdesc:'',
+                country:'emirates'
               }, 
     
 
@@ -353,6 +380,7 @@ items:[
                 query:'buisness',
                 desc:'',
                 subdesc:'',
+                country:'emirates'
               }, 
     
 
@@ -389,6 +417,7 @@ items:[
             query:'visa',
             desc:'',
             subdesc:'',
+            country:'uzbakistan'
           }, 
 
 
@@ -401,6 +430,7 @@ items:[
             query:'historyProgramm',
             desc:'',
             subdesc:'',
+            country:'uzbakistan'
           }, 
 
           {
@@ -412,6 +442,7 @@ items:[
             query:'tourismProgramms',
             desc:'',
             subdesc:'',
+            country:'uzbakistan'
           }, 
 
           {
@@ -422,6 +453,7 @@ items:[
             query:'relaxing',
             desc:'',
             subdesc:'',
+            country:'uzbakistan'
           }, 
 
 
@@ -449,6 +481,7 @@ items:[
         query:'visa',
         desc:'',
         subdesc:'',
+        country:'kirgistan'
       },
       {
         name: " برنامج استكشف 4x4",
@@ -458,6 +491,7 @@ items:[
         query:'4xCars',
         desc:'',
         subdesc:'',
+        country:'kirgistan'
       },
   
     ],
