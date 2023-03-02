@@ -341,7 +341,7 @@ const MobileMenuContent = () => {
      
 
           <MenuItem>
-            <Link href="/">
+            <Link href="/blogs">
               <a
                 className={
                   route.pathname === "/blogs" ? "ui-active" : undefined
