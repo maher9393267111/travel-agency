@@ -101,7 +101,7 @@ const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
                   </ul>
                   <div className="thumb">
                     <img
-                      className="img-fluid  w-full h-[600px]  object-cover"
+                      className="img-fluid  w-full h-[288px]  md:h-[400px] lg:h-[600px]  object-cover"
                       src={data?.image[0]?.url}
                       // src="assets/images/blog/bs1.jpg"
                       alt="bs1.jpg"
