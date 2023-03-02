@@ -8,6 +8,7 @@ import { StateContextProvider } from "../context/index";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "node_modules/video-react/dist/video-react.css"; // import css
+import Head from "next/head";
 
 
 if (typeof window !== "undefined") {
@@ -22,7 +23,18 @@ function MyApp({ Component, pageProps }) {
         font={
           "https://fonts.googleapis.com/css?family=Nunito:400,400i,500,600,700&display=swap"
         }
+
+
+
       />
+
+<Head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</Head>
+
+
       <Provider store={store}>
         <Component {...pageProps} />
       </Provider>
