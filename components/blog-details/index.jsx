@@ -213,11 +213,11 @@ const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
       </section>
 
       {/* <!-- Our Footer Bottom Area --> */}
-      <section className="footer_middle_area pt40 pb40">
+      {/* <section className="footer_middle_area pt40 pb40">
         <div className="container">
           <CopyrightFooter />
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
