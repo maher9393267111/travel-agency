@@ -28,8 +28,8 @@ const Header = () => {
         <Link href="/">
           <a className="navbar_brand float-start dn-smd">
             <img
-              className="logo1 img-fluid"
-              src= '/assets/images/service/logoproject.jpeg'
+              className="logo1 img-fluid  object-contain"
+              src= '/assets/images/service/logo-png-here.jpeg'
               // src="/assets/images/ogle-color-logo.png"
               alt="header-logo2.png"
             />

@@ -181,8 +181,9 @@ const MobileMenuContent = () => {
           <Link href="/">
             <a className="sidebar-header-inner">
               <img
-                className="nav_logo_img  w-[70px]  h-[70px] img-fluid mt20"
-                 src=  '/assets/images/service-imgs/logoproject.jpeg'
+                className="nav_logo_img  w-[70px]  h-[70px] img-fluid mt20 object-contain"
+                 src=  '/assets/images/service-imgs/logo-png-here.jpeg'
+                 
                 //  src="/assets/images/ogle-color-logo.png"
                 alt="header-logo.png"
               />

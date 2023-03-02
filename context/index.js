@@ -59,7 +59,7 @@ export const StateContextProvider = ({ children }) => {
 
       console.log("Document successfully deleted!");
       toast.success('Blog deleted successfully')
-      window.location.reload
+      window.location.reload()
 
     } catch (error) {
       console.error("Error removing document: ", error);
