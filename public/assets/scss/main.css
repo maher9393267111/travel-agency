@@ -6255,8 +6255,12 @@ form.home5_advanced_search_form
 .feat_property .thumb img {
   opacity: 0.6;
   object-fit: fill;
-  min-height: 220px;
+  /* min-height: 220px; */
+  height: 222px;
 }
+
+
+
 
 .feat_property .thumb .blog_tag {
   background-color: var(--color-primary);

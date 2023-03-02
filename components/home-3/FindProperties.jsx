@@ -11,7 +11,7 @@ const FindProperties = () => {
             <a className="properti_city d-block">
               <div className="thumb">
                 <img 
-                  className="img-fluid w-100    object-cover   img-style" 
+                  className="img-fluid w-100      object-fill   img-style" 
                 // className='img-whp'
                 // style={{ width: '300px !important', height: '350px !important'}}
                 
