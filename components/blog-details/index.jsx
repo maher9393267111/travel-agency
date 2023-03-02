@@ -123,12 +123,12 @@ const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
                     </p>
                  
                   </div>
-                  <ul className="blog_post_share">
+                  {/* <ul className="blog_post_share">
                     <li>
                       <p>Share</p>
                     </li>
                     <Social />
-                  </ul>
+                  </ul> */}
                   {/* End .blog_post_share */}
                 </div>
                 {/* End .mbp_thumb_post */}
