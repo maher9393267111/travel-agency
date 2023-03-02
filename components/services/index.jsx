@@ -53,7 +53,7 @@ const index = ({  filteredService}) => {
 
 <div>
 
-asas
+
 
 </div>
 
