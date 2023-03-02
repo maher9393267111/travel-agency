@@ -476,7 +476,9 @@ items:[
     items: [
       {
         name: " تأشيره قيرغيستان",
-        routerPath: "",
+        
+        routerPath: "/country/?country=6&service=visa",
+        mainImage:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/6a/e9/caption.jpg?w=500&h=300&s=1",
         images:[],
         query:'visa',
         desc:'',
