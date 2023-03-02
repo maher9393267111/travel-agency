@@ -48,10 +48,10 @@ const FeaturedProperties = () => {
                 <div className="thmb_cntnt">
                   <ul className="tag mb0">
                     {/* {item.saleTag.map((val, i) => ( */}
-
+{/* 
                       <li className="list-inline-item">
                         <a href="#">{item?.featurecorner}</a>
-                      </li>
+                      </li> */}
 
 
                      {/* ))} */}
@@ -83,7 +83,7 @@ const FeaturedProperties = () => {
                 <div className="tc_content">
                   <p className="text-thm">{item.type}</p>
                   <h4>
-                    <Link href={`/listing-details-v1/${item.id}`}>
+                    <Link href={`/`}>
                       <a>{item.title}</a>
                     </Link>
                   </h4>
