@@ -242,12 +242,29 @@ items:[
 
           {
          
+            name: "تأجير السيارات",
+            routerPath: "/country/?country=2&service=carsRental",
+          
+            mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
+            images:[],
+            query:'carsRental',
+            desc:'',
+            subdesc:'',
+            country:'turkey'
+          },
+    
+
+
+
+
+          {
+         
           
             name: "الوساطه التجاريه لتقديم خدمات رجال الاعمال",
             routerPath: "/country/?country=2&service=business",
             mainImage:"/assets/images/service-imgs/turkey-banner.jpeg",
             images:[],
-            query:'carsRental',
+            query:'business',
             desc:'',
             subdesc:'',
             country:'turkey'
