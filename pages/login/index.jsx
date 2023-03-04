@@ -3,7 +3,7 @@ import Seo from "../../components/common/seo";
 import Login from "../../components/login";
 import { StateContext } from "../..//context/index";
 import { useRouter } from "next/router";
-import { useContext, useState , useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 
 const index = () => {
 
@@ -12,7 +12,7 @@ const index = () => {
 
 
 
-  const { user} = useContext(StateContext)
+  const { user } = useContext(StateContext)
   const { pathname, replace } = useRouter()
 
   // if (user !== null) {
@@ -26,31 +26,31 @@ const index = () => {
   //   )
   // }
 
-useEffect(() => {
+  useEffect(() => {
 
 
-  if (user !== null) {
-    replace('/admin')
- 
- }
+    if (user !== null) {
+      replace('/admin')
 
-
-
-
-  setTimeout(() => {
-    console.log("Delayed for 13second.");
-
-    // if (user !== null) {
-    //    replace('/')
-    
-    // }
+    }
 
 
 
-  }, 3000)
+
+    setTimeout(() => {
+      console.log("Delayed for 13second.");
+
+      // if (user !== null) {
+      //    replace('/')
+
+      // }
 
 
-})
+
+    }, 3000)
+
+
+  })
 
 
 
@@ -61,8 +61,8 @@ useEffect(() => {
 
   return (
 
-    
-  
+
+
 
 
 

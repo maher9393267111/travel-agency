@@ -32,12 +32,12 @@ const Form = () => {
 
       <div className="heading text-center">
         <h3>Login to your account</h3>
-        <p className="text-center">
+        {/* <p className="text-center">
           Dont have an account?{" "}
           <Link href="/register">
             <a className="text-thm">Sign Up!</a>
           </Link>
-        </p>
+        </p> */}
       </div>
       {/* End .heading */}
 
