@@ -24,6 +24,7 @@ const parseHtml = (desc) => {
 
   return (
     <>
+    
       {/* {blogContent.slice(0, 6).map((item) => (
         <div className="col-lg-4 col-md-6" key={item.id}>
           <div className="for_blog feat_property">

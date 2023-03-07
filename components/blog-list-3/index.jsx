@@ -11,38 +11,38 @@ import SearchMap from './searchMap'
 const index = ({data}) => {
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
+     
       <Header />
 
-      {/* <!--  Mobile Menu --> */}
+    
       <MobileMenu />
 
-      {/* <!-- Modal --> */}
+     
       <PopupSignInUp />
 
 
-{/* -----Map   ---- */}
+
 
 <SearchMap/>
 
-      {/* <!-- Main Blog Post Content --> */}
-      <section className="blog_post_container bgc-f7">
+  
+       <section className="blog_post_container bgc-f7">
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               <BreadCrumbBlog />
             </div>
           </div>
-          {/* End .row */}
+          
 
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
                 <Blog data={data} />
-                {/* End blog item */}
+              
               </div>
-              {/* End .row */}
-{/* 
+            
+ 
               <div className="row">
                 <div className="col-lg-12">
                   <div className="mbp_pagination mt20">
@@ -50,31 +50,26 @@ const index = ({data}) => {
                   </div>
          
                 </div>
-              </div> */}
-              {/* End .row */}
+              </div> 
+          
             </div>
-            {/* End .col */}
+            
           </div>
-          {/* End .row */}
+          
         </div>
-        {/* End .container */}
-      </section>
+       
+      </section> 
 
-      {/* <!-- Our Footer --> */}
-      <section className="footer_one">
+    
+      {/* <section className="footer_one">
         <div className="container">
           <div className="row">
             <Footer />
           </div>
         </div>
-      </section>
+      </section>  */}
 
-      {/* <!-- Our Footer Bottom Area --> */}
-      {/* <section className="footer_middle_area pt40 pb40">
-        <div className="container">
-          <CopyrightFooter />
-        </div>
-      </section> */}
+    
     </>
   );
 };
